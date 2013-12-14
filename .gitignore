@@ -11,3 +11,6 @@ Temp
 # Visual Studio files
 obj
 *.suo
+
+# Ignore tk2d Library
+TK2DROOT*
