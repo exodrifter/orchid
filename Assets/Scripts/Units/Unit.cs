@@ -6,6 +6,7 @@ public class Unit : Entity {
 
 
     private Point m_source, m_destination;
+    private bool m_reachedDestination = false;
 
     private Entity m_attackTarget;
     
@@ -22,6 +23,14 @@ public class Unit : Entity {
     public Vector2 position
     {
         get { return transform.position; }
+    }
+    public Point destination
+    {
+        get { return m_destination; }
+    }
+    public Point source
+    {
+        get { return m_source; }
     }
 
     void Awake() {
@@ -53,7 +62,6 @@ public class Unit : Entity {
         rigidBody2D.isKinematic = false;
         rigidBody2D.fixedAngle = true;
         rigidBody2D.gravityScale = 0f;
-
 
         BoxCollider2D colliderTemp = gameObject.AddComponent<BoxCollider2D>();
         colliderTemp.size = gameObject.GetComponent<tk2dSprite>().GetBounds().size;
@@ -101,7 +109,7 @@ public class Unit : Entity {
     }
 
     bool CanAttack(Entity target){
-        if(this.m_owner == target.m_owner){
+        if(target.m_owner == this.m_owner){
             return false;
         }
 
@@ -135,6 +143,17 @@ public class Unit : Entity {
         }
     }
 
+    public void ReachedDestination(){
+        gameObject.GetComponent<Rigidbody2D>().velocity *= -1;
+        m_reachedDestination = true;
+    }
+
+    public void FinishMission(){
+        if(m_reachedDestination){
+            Destroy(gameObject);
+        }
+    }
+
     //OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -142,6 +161,7 @@ public class Unit : Entity {
         if (other is BoxCollider2D)
         {
             Entity possibleTarget = other.gameObject.GetComponent<Entity>();
+            if(possibleTarget == null) Debug.LogError("No Entity on other.gameobject:: " + other.gameObject);
             if(CanAttack (possibleTarget)){
                 Debug.Log("Setting attackTarget of type " + possibleTarget.type);
                 m_attackTarget = possibleTarget;

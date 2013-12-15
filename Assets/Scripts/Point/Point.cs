@@ -16,4 +16,22 @@ public abstract class Point : Entity {
 		get { return m_money; }
 	}
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(gameObject.name + " triggered by " + other.GetType());
+        if (other is BoxCollider2D)
+        {
+            Entity possibleTarget = other.gameObject.GetComponent<Entity>();
+            if(possibleTarget.type == Type.bomber || possibleTarget.type == Type.fighter){
+                Unit possibleUnit = (Unit) possibleTarget;
+                if(possibleUnit.destination.position == this.position){
+                    possibleUnit.ReachedDestination();
+                }
+                else if(possibleUnit.source.position == this.position){
+                    possibleUnit.FinishMission();
+                }
+            }
+        }
+    }
+
 }

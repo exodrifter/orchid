@@ -45,18 +45,6 @@ public class Entity : MonoBehaviour {
         get { return transform.position; }
     }
 
-    void InitBody(){
-        Rigidbody2D rigidBody2D = gameObject.AddComponent<Rigidbody2D>();
-        rigidBody2D.isKinematic = false;
-        rigidBody2D.fixedAngle = true;
-        rigidBody2D.gravityScale = 0f;
-
-
-        BoxCollider2D colliderTemp = gameObject.AddComponent<BoxCollider2D>();
-        colliderTemp.size = gameObject.GetComponent<tk2dSprite>().GetBounds().size;
-        colliderTemp.isTrigger = true;
-    }
-
     public IEnumerator HitEffect()
     {
         gameObject.renderer.enabled = false;
