@@ -108,25 +108,47 @@ public class Unit : MonoBehaviour {
         StartCoroutine(laser.Fade());
 
         float hitChance = Random.Range(0, 1.0f);
-        if (hitChance >= m_munition.accuracy)
+        if (hitChance <= m_munition.accuracy)
         {
             target.TakeDamage(damage);
         }
     }
 
+    public IEnumerator Hit()
+    {
+        gameObject.renderer.enabled = false;
+        for (int i = 0; i < 2; i++)
+        {
+            yield return 0;
+        }
+        gameObject.renderer.enabled = true;
+    }
+
     void TakeDamage(float damage)
     {
+        StartCoroutine(Hit());
         health -= damage;
+
+        if(health < 0){
+            //explode?
+            Destroy(gameObject);
+        }
     }
 
     //OnTriggerEnter is called when the Collider other enters the trigger.
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         Debug.Log(gameObject.name + " triggered by " + other.GetType());
         if (other is BoxCollider2D)
         {
             m_attackTarget = other.gameObject.GetComponent<Unit>();
         }
+    }
 
+    //OnTriggerEnter is called when the Collider other enters the trigger.
+    void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log(other.GetType() + " left " + gameObject.name);
+        m_attackTarget = null;
     }   
 }
