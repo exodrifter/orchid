@@ -131,10 +131,46 @@ MonoBehaviour:
     spriteCollectionDataGUID: e37689fa70bd3d74aaaad246309e9dbe
     spriteNames:
     - TemplateUnit
+    - MedFighterShadow
+    - SmallBomberShadow
+    - MedBomberShadow
+    - BigBomberShadow
+    - SmallBomber
+    - SmallFighterShadow
+    - BigBomber
+    - MedFighter
+    - BigFighterShadow
+    - BigFighter
+    - MedBomber
+    - SmallFighter
     spriteTextureGUIDs:
     - 89ef4ed8c14ed964691b82ffc27c5d37
+    - 0aa1290c5cf386b409b9b039dde6ef7d
+    - 21e9c2f8898ce1347b2194afdc36105a
+    - 3369e312665987d4a926e9ffd24dbc4b
+    - 3f280fc70995fc64292d90068a4b50cb
+    - 49441a75eae19a94a8ff0b3d5a32ed16
+    - 82a98fbb0a43e544a8ad41341f040661
+    - 850d1f55bd28bed4398dcef5051d898d
+    - 935543b7243a7a040bcd6ddecb8ab7c9
+    - 97478946a6c468d438d2b8e310d54c95
+    - a01eaa312cbc77140873d56cece071c7
+    - b635685ef277fa9409b15d96fb7918f7
+    - e7b2afc90d6925b4786ad85eb7e2a102
     spriteTextureTimeStamps:
     - 1387049390.30934
+    - 1387057727
+    - 1387057923
+    - 1387057997
+    - 1387058046
+    - 1387057936
+    - 1387056643
+    - 1387058063
+    - 1387057758
+    - 1387057823
+    - 1387057808
+    - 1387058016
+    - 1387056661
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
