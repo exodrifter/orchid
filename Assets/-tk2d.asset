@@ -73,10 +73,22 @@ MonoBehaviour:
     spriteCollectionDataGUID: e37689fa70bd3d74aaaad246309e9dbe
     spriteNames:
     - TemplateUnit
+    - placeholder-location
+    - placeholder-bomber
+    - placeholder-icbm
+    - placeholder-fighter
     spriteTextureGUIDs:
     - 89ef4ed8c14ed964691b82ffc27c5d37
+    - de718633242024f4e8a7ec998e3b830e
+    - 1bed01f01bf32f842a2bcef133184734
+    - a9cc59894e2d4ff43ac77dccf4ef6a45
+    - c2551cc85d2731c4097eeb75b8437cd8
     spriteTextureTimeStamps:
     - 1387049390.30934
+    - 1387042453.24745
+    - 1387044835.84644
+    - 1387044881.11847
+    - 1387044860.23722
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
