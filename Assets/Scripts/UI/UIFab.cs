@@ -9,6 +9,7 @@ public class UIFab : PointUI {
 	public AudioClip m_hoverSound;
 	public AudioClip m_clickSound;
 	public AudioClip m_cancelSound;
+	public AudioClip m_buySound;
 	
 	private string m_theme = "placeholder-";
 	
@@ -100,6 +101,7 @@ public class UIFab : PointUI {
 		box.isTrigger = true;
 		
 		UIUnit unit = ret.AddComponent<UIUnit>();
+		unit.m_buySound = m_buySound;
 		unit.type = type;
 		unit.fab = this;
 		return ret;

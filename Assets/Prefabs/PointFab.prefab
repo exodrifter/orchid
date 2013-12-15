@@ -109,6 +109,7 @@ MonoBehaviour:
   m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
   m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
   m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
+  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_owner: 1
+  m_type: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

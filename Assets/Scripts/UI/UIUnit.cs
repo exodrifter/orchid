@@ -3,6 +3,8 @@ using System.Collections;
 
 public class UIUnit : MonoBehaviour {
 	
+	public AudioClip m_buySound;
+	
 	private UIFab m_fab;
 	private Entity.Type m_type;
 	
@@ -18,5 +20,6 @@ public class UIUnit : MonoBehaviour {
 	
 	void OnMouseDown() {
 		m_fab.AddToSpawnList(m_type);
+		AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.3f);
 	}
 }
