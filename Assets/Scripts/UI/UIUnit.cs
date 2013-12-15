@@ -19,7 +19,10 @@ public class UIUnit : MonoBehaviour {
 	}
 	
 	void OnMouseDown() {
-		m_fab.AddToSpawnList(m_type);
-		AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.3f);
+		if(State.PlayerMoney >= State.GetCostOf(m_type)) {
+			State.PlayerMoney -= State.GetCostOf(m_type);
+			m_fab.AddToSpawnList(m_type);
+			AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
+		}
 	}
 }
