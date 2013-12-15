@@ -261,6 +261,7 @@ GameObject:
   - 33: {fileID: 1646526759}
   - 114: {fileID: 1646526758}
   - 114: {fileID: 1646526757}
+  - 114: {fileID: 1646526756}
   m_Layer: 0
   m_Name: TestUnit
   m_TagString: Untagged
@@ -268,6 +269,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1646526756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646526755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4801f8eeb939ec4da0d8a9852facd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetType: 1
+  colour: {r: 1, g: 0, b: 0, a: 1}
+  damage: 10
+  attack_time: .300000012
+  attack_time_variance: .100000001
+  accuracy: .800000012
 --- !u!114 &1646526757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,7 +356,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646526755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.44278526, y: -9.23413467, z: 0}
+  m_LocalPosition: {x: -12.7448635, y: -9.23413467, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -354,6 +372,7 @@ GameObject:
   - 33: {fileID: 1829239880}
   - 114: {fileID: 1829239879}
   - 114: {fileID: 1829239878}
+  - 114: {fileID: 1829239883}
   m_Layer: 0
   m_Name: TestTarget
   m_TagString: Untagged
@@ -431,7 +450,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1829239877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.2053738, y: -13.5975685, z: 0}
+  m_LocalPosition: {x: .537101746, y: -13.5975685, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1829239883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829239877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4801f8eeb939ec4da0d8a9852facd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetType: 1
+  colour: {r: .0344824791, g: 0, b: 1, a: 1}
+  damage: .100000001
+  attack_time: .5
+  attack_time_variance: .200000003
+  accuracy: .800000012
