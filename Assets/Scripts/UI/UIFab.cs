@@ -4,6 +4,10 @@ using System.Collections;
 [RequireComponent(typeof(BoxCollider2D))]
 public class UIFab : PointUI {
 	
+	public AudioClip m_hoverSound;
+	public AudioClip m_clickSound;
+	public AudioClip m_cancelSound;
+
 	private string m_theme = "placeholder-";
 	
 	private GameObject m_fighterButton;
@@ -26,14 +30,28 @@ public class UIFab : PointUI {
 			Vector3 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			// Check if the click was on the point
 			if(collider2D.OverlapPoint(clickPos)) {
+				if(!IsOpen()) {
+					AudioSource.PlayClipAtPoint(m_clickSound,transform.position);
+				} else {
+					AudioSource.PlayClipAtPoint(m_cancelSound,transform.position,0.5f);
+				}
 				SetOpen(!IsOpen());
 			}
 			// Check if it collides with any children
 			else if(!m_fighterButton.collider2D.OverlapPoint(clickPos)
 					&& !m_bomberButton.collider2D.OverlapPoint(clickPos)
 					&& !m_icbmButton.collider2D.OverlapPoint(clickPos)) {
+				if(IsOpen()) {
+					AudioSource.PlayClipAtPoint(m_cancelSound,transform.position,0.5f);
+				}
 				SetOpen(false);
 			}
+		}
+	}
+
+	void OnMouseEnter() {
+		if(!IsOpen()) {
+			AudioSource.PlayClipAtPoint(m_hoverSound,transform.position,0.5f);
 		}
 	}
 	
