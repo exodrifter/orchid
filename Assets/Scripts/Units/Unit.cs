@@ -94,25 +94,40 @@ public class Unit : Entity {
         gameObject.GetComponent<Rigidbody2D>().velocity = direction.normalized * velocity;
     }
 
-    //bool canAttack(Unit target){
-    //    if(this.type == UnitType.fighter){
-    //        if(target.type != 
-    //        }
-    //}
+    bool CanAttack(Entity target){
+        if(this.m_owner == target.m_owner){
+            return false;
+        }
+
+        switch (this.type)
+	    {
+            case Type.bomber:
+                return target.type == Type.point;
+            case Type.fighter:
+                return true;
+            case Type.icbm:
+                return target.type == Type.point;
+            case Type.point:
+                return false;
+            default:
+                Debug.LogError("We are attacking with an unchecked type.");
+                return false;
+	    }
+    }
 
     //overidable method used to attack an object
     void Attack(Entity target)
     {
-        
-        int damage = m_munition.damage;
+        if(CanAttack (target)){
+            int damage = m_munition.damage;
 
-        Laser laser = new Laser(position, target.position, m_munition.colour);
-        StartCoroutine(laser.Fade());
+            Laser laser = new Laser(position, target.position, m_munition.colour);
+            StartCoroutine(laser.Fade());
 
-        float hitChance = Random.Range(0, 1.0f);
-        if (hitChance <= m_munition.accuracy)
-        {
-            target.TakeDamage(damage);
+            float hitChance = Random.Range(0, 1.0f);
+            if (hitChance <= m_munition.accuracy){
+                target.TakeDamage(damage);
+            }
         }
     }
 
