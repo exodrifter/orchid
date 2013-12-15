@@ -75,11 +75,11 @@ MonoBehaviour:
     - c2551cc85d2731c4097eeb75b8437cd8
     - cccd85d21d6513c46a428a71192d7ac8
     spriteTextureTimeStamps:
-    - 1387042453.24745
-    - 1387044835.84644
-    - 1387044881.11847
-    - 1387044860.23722
-    - 1387055789.62507
+    - 1387059710.42223
+    - 1387059710.42122
+    - 1387059710.42223
+    - 1387059710.42122
+    - 1387059710.42323
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -105,7 +105,7 @@ MonoBehaviour:
     spriteTextureGUIDs:
     - d5c2fbaf7b26b0e408a91b35976f826c
     spriteTextureTimeStamps:
-    - 1387053923
+    - 1387059710.41619
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

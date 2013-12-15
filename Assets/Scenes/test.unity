@@ -869,7 +869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad9ad626b343a44681c46151118ea02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: {x: 5, y: 5}
+  m_moveSpeed: {x: 10, y: 10}
+  m_minBounds: {x: -200, y: -100}
+  m_maxBounds: {x: 200, y: 100}
 --- !u!1001 &1083053174
 Prefab:
   m_ObjectHideFlags: 0
