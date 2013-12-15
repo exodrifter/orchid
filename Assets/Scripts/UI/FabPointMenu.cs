@@ -59,6 +59,7 @@ public class FabPointMenu : MonoBehaviour {
 		
 		BoxCollider2D box = ret.AddComponent<BoxCollider2D>();
 		box.size = sprite.GetBounds().size;
+		box.isTrigger = true;
 		
 		return ret;
 	}
