@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MenuCity : PointUI {
+public class UICity : PointUI {
 	
 	public tk2dFontData m_font;
 	

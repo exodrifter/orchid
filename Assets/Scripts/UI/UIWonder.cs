@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D),typeof(PointWonder))]
-public class MenuWonder : PointUI {
+public class UIWonder : PointUI {
 	
 	public tk2dFontData m_font;
 	public string m_name;

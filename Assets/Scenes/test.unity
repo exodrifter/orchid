@@ -319,12 +319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
-  m_theme: 706c616365686f6c6465722d
-  m_fighterButton: {fileID: 0}
-  m_bomberButton: {fileID: 0}
-  m_icbmButton: {fileID: 0}
 --- !u!61 &244606551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -513,13 +507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 537461747565206f66204c696265727479
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Statue of Liberty
 --- !u!1 &422284090
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,13 +631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 45696666656c20546f776572
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Eiffel Tower
 --- !u!1 &512731268
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,13 +784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 47726561742057616c6c
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Great Wall
 --- !u!1001 &746229110
 Prefab:
   m_ObjectHideFlags: 0
@@ -981,13 +960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 436f6c6f737365756d
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Colosseum
 --- !u!1 &1037745333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,13 +1278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 546f6b796f20546f776572
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Tokyo Tower
 --- !u!1 &1140997101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,13 +1482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 436872697374207468652052656465656d6572
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Christ the Redeemer
 --- !u!1001 &1242259244
 Prefab:
   m_ObjectHideFlags: 0
@@ -1717,13 +1681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 53746f6e6568656e6765
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Stonehenge
 --- !u!1001 &1381392033
 Prefab:
   m_ObjectHideFlags: 0
@@ -1898,13 +1857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 477265617420507972616d696473
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Great Pyramids
 --- !u!1 &1506819546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,12 +1902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
-  m_theme: 706c616365686f6c6465722d
-  m_fighterButton: {fileID: 0}
-  m_bomberButton: {fileID: 0}
-  m_icbmButton: {fileID: 0}
 --- !u!61 &1506819549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2490,13 +2438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 54616a204d6168616c
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Taj Mahal
 --- !u!1001 &2024987990
 Prefab:
   m_ObjectHideFlags: 0
@@ -2667,13 +2610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_children: []
-  m_open: 0
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 5379646e6579204f7065726120486f757365
-  m_nameText: {fileID: 0}
-  m_moneyText: {fileID: 0}
-  m_point: {fileID: 0}
+  m_name: Sydney Opera House
 --- !u!1001 &2083598819
 Prefab:
   m_ObjectHideFlags: 0

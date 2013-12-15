@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class MenuFab : PointUI {
+public class UIFab : PointUI {
 	
 	private string m_theme = "placeholder-";
 	
