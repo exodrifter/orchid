@@ -6,6 +6,7 @@ public class Unit : Entity {
 
 
     private Point m_source, m_destination;
+
     private Entity m_attackTarget;
     
     public float velocity = 100; // pixels per second
@@ -16,7 +17,6 @@ public class Unit : Entity {
     private Munition m_munition;
     private LineRenderer m_lineRenderer;
 
-
     private Timer m_attackTimer;
 
     public Vector2 position
@@ -24,15 +24,17 @@ public class Unit : Entity {
         get { return transform.position; }
     }
 
+    void Awake() {
+        InitBody();
+        InitRange();
+    }
+
     //Use this for initialization
     void Start()
     {
-        InitBody();
-        InitRange();
-
-        //////This is for testing
-        ////    gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
-        ///////////////////////////
+        //This is for testing
+            //gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
+        ///////////////////////
 
         m_munition = gameObject.GetComponent<Munition>();
         m_lineRenderer = gameObject.AddComponent<LineRenderer>();
@@ -62,9 +64,9 @@ public class Unit : Entity {
         colliderTemp.radius = range;
         colliderTemp.isTrigger = true;
     }
-	
-	// Update is called once per frame
-	void Update ()
+    
+    // Update is called once per frame
+    void Update ()
     {
         if (m_attackTarget)
         { 
@@ -77,21 +79,19 @@ public class Unit : Entity {
                 m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
             }
         }
-	}
+    }
 
-    void Target(Point target)
+    public void SetSourceAndTarget(Point source, Point target)
     {
+        // Move the unit to the source
+        m_source = source;
+        this.transform.position = source.position;
+
         // at some point assign the target point and make it point in that direction
         m_destination = target;
 
         Vector2 direction = m_destination.position - m_source.position;
         gameObject.GetComponent<Rigidbody2D>().velocity = direction.normalized * velocity;
-    }
-
-    //TODO this needs a better name
-    void Source(Point source)
-    {
-        m_source = source;
     }
 
     //bool canAttack(Unit target){
