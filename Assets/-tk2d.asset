@@ -253,3 +253,19 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: UICollection
+    spriteCollectionGUID: 21596096d5950484a90359e4c9e73b71
+    spriteCollectionDataGUID: acb375c8957a4484e8b73c87d32eaebf
+    spriteNames:
+    - upgrade-fight
+    - upgrade-bomb
+    spriteTextureGUIDs:
+    - 05f17609212672b4b8b415000ce46241
+    - 237a40fa11b703b4497084db8ee6aaeb
+    spriteTextureTimeStamps:
+    - 1387124777.13903
+    - 1387124777.13802
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
