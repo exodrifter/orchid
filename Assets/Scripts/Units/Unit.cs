@@ -36,6 +36,11 @@ public class Unit : Entity {
             //gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
         ///////////////////////
 
+        // Reset the unit's velocity
+        if(null != m_source && null != m_destination) {
+            SetSourceAndTarget(m_source, m_destination);
+        }
+
         m_munition = gameObject.GetComponent<Munition>();
         m_lineRenderer = gameObject.AddComponent<LineRenderer>();
         

@@ -17,16 +17,16 @@ public class UIFab : PointUI {
 	private GameObject m_icbmButton;
 	
 	private Queue<GameObject> m_spawnQueue = new Queue<GameObject>();
-	private List<Unit.UnitType> m_spawnList = new List<Unit.UnitType>();
+	private List<Entity.Type> m_spawnList = new List<Entity.Type>();
 	
 	private PointFab m_point;
 	
 	void Awake() {
 		int m_xMargin = 15;
 		int m_yMargin = 15;
-		m_fighterButton = CreateButton("button-fighter","fighter",Unit.UnitType.fighter,new Vector2(-m_xMargin,m_yMargin));
-		m_bomberButton = CreateButton("button-bomber","bomber",Unit.UnitType.bomber,new Vector2(0,m_yMargin));
-		m_icbmButton = CreateButton("button-icbm","icbm",Unit.UnitType.icbm,new Vector2(m_xMargin,m_yMargin));
+		m_fighterButton = CreateButton("button-fighter","fighter",Entity.Type.fighter,new Vector2(-m_xMargin,m_yMargin));
+		m_bomberButton = CreateButton("button-bomber","bomber",Entity.Type.bomber,new Vector2(0,m_yMargin));
+		m_icbmButton = CreateButton("button-icbm","icbm",Entity.Type.icbm,new Vector2(m_xMargin,m_yMargin));
 		m_children.Add(m_fighterButton);
 		m_children.Add(m_bomberButton);
 		m_children.Add(m_icbmButton);
@@ -57,7 +57,7 @@ public class UIFab : PointUI {
 				Point destination = ClickedOnPoint(clickPos);
 				if(null != destination) {
 					// TODO: Send units
-					foreach(Unit.UnitType type in m_spawnList) {
+					foreach(Entity.Type type in m_spawnList) {
 						GameObject unit = m_unitFactory.SpawnUnit(type);
 						unit.GetComponent<Unit>().SetSourceAndTarget(m_point,destination);
 						unit.SetActive(false);
@@ -85,7 +85,7 @@ public class UIFab : PointUI {
 		}
 	}
 	
-	private GameObject CreateButton(string name, string img, Unit.UnitType type, Vector2 offset) {
+	private GameObject CreateButton(string name, string img, Entity.Type type, Vector2 offset) {
 		GameObject ret = new GameObject();
 		ret.name = name;
 		ret.transform.parent = this.transform;
@@ -105,7 +105,7 @@ public class UIFab : PointUI {
 		return ret;
 	}
 	
-	public void AddToSpawnList(Unit.UnitType type) {
+	public void AddToSpawnList(Entity.Type type) {
 		if(IsOpen()) {
 			m_spawnList.Add(type);
 		}

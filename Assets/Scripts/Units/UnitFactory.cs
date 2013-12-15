@@ -14,10 +14,10 @@ public class UnitFactory : MonoBehaviour {
 	public GameObject bomberMedium;
 	public GameObject bomberBig;
 	
-	public GameObject SpawnUnit(Unit.UnitType type) {
+	public GameObject SpawnUnit(Entity.Type type) {
 		GameObject prefab = null;
 		switch(type) {
-		case Unit.UnitType.fighter:
+		case Entity.Type.fighter:
 			if(m_fighterLevel < 1) {
 				prefab = fighterSmall;
 			} else if(m_fighterLevel < 2) {
@@ -26,7 +26,7 @@ public class UnitFactory : MonoBehaviour {
 				prefab = fighterBig;
 			}
 			break;
-		case Unit.UnitType.bomber:
+		case Entity.Type.bomber:
 			if(m_bomberLevel < 1) {
 				prefab = bomberSmall;
 			} else if(m_bomberLevel < 2) {
