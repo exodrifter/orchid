@@ -7,7 +7,8 @@ public class Timer {
 	private float m_elapsed;
 	
 	public float time {
-		get {return m_time; }
+		get { return m_time; }
+		set { m_time = value; }
 	}
 	
 	public float elapsed {

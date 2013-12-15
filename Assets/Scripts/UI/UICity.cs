@@ -24,10 +24,15 @@ public class UICity : PointUI {
 		}
 		
 		tk2dTextMesh mesh = m_popText.GetComponent<tk2dTextMesh>();
-		if(IsOpen()) {
-			mesh.text = "Population: " + m_point.population;
-		} else {
-			mesh.text = ""+m_point.population;
+		if(!m_point.exists) {
+			mesh.renderer.enabled = false;
+		}else {
+			mesh.renderer.enabled = true;
+			if(IsOpen()) {
+				mesh.text = "Population: " + m_point.population;
+			} else {
+				mesh.text = ""+m_point.population;
+			}
 		}
 		mesh.Commit();
 	}
