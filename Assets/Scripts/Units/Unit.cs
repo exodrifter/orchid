@@ -150,6 +150,7 @@ public class Unit : Entity {
 
     public void FinishMission(){
         if(m_reachedDestination){
+            State.PlayerMoney += 1; //TODO this needs to be checked
             Destroy(gameObject);
         }
     }
