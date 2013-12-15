@@ -10,6 +10,7 @@ public class UIFab : PointUI {
 	public AudioClip m_clickSound;
 	public AudioClip m_cancelSound;
 	public AudioClip m_buySound;
+	public AudioClip m_launchSound;
 	
 	private string m_theme = "placeholder-";
 	
@@ -57,7 +58,6 @@ public class UIFab : PointUI {
 			else {
 				Point destination = ClickedOnPoint(clickPos);
 				if(null != destination) {
-					// TODO: Send units
 					foreach(Entity.Type type in m_spawnList) {
 						GameObject unit = m_unitFactory.SpawnUnit(type);
 						unit.GetComponent<Unit>().SetSourceAndTarget(m_point,destination);
@@ -65,6 +65,7 @@ public class UIFab : PointUI {
 						m_spawnQueue.Enqueue(unit);
 					}
 					StopAllCoroutines();
+					AudioSource.PlayClipAtPoint(m_launchSound,transform.position,0.5f);
 					StartCoroutine(SpawnUnits());
 				}
 				// Player clicked in an invalid location, cancel everything
