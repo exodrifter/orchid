@@ -25,6 +25,10 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: 75a299f7f4c0833428d7224a94a1d20d
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -184,6 +188,67 @@ MonoBehaviour:
     - d5c2fbaf7b26b0e408a91b35976f826c
     spriteTextureTimeStamps:
     - 1387064273.81862
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: ExplosionCollection
+    spriteCollectionGUID: 25bea83c593a5af489863b63bb65c9dd
+    spriteCollectionDataGUID: ef520f887fe6fec48a21bfde8490b5d4
+    spriteNames:
+    - Explosion102
+    - Explosion107
+    - Explosion100
+    - Explosion104
+    - Explosion105
+    - Explosion103
+    - Explosion106
+    - Explosion101
+    - ExplosionSmall08
+    - ExplosionSmall01
+    - ExplosionSmall04
+    - ExplosionSmall00
+    - ExplosionSmall03
+    - ExplosionSmall02
+    - ExplosionSmall07
+    - ExplosionSmall06
+    - ExplosionSmall05
+    spriteTextureGUIDs:
+    - 15c275c60df1e2c44b96b01effef993f
+    - 1c5bcf80303ab3c4a87ea2e6cd184145
+    - 2033ef87deb18534faa9868955d5ff04
+    - 59040fbb334519f40b6930c10306f43a
+    - 75b1ad7bbb6cd314b991a74088139fcf
+    - 7ddb14d866653564bbc21f29bc99f32f
+    - 879c4d1232b17db4499605895f454523
+    - d70ad3f4494485e4e8a0cddfd2130a66
+    - 227b5c9860c404343bf678503c839ec5
+    - 512f54b5003430948aa39c742be06755
+    - 6d34fd3d22beddf4780a7b7d950a0c8d
+    - 71842ce85d0768d41a73b5aaf16cc8f2
+    - 7ba83d9351da9414e92a268de467af65
+    - 7e9df19f5d415f54789c899373dd8582
+    - bde9a6f9febebd545857a96bdd7d7c65
+    - d05ee4adf05d66a46b1a0b48ce7f6fd0
+    - dc91664f71f6d3c488331d9dbfbe3293
+    spriteTextureTimeStamps:
+    - 1387069926
+    - 1387069927
+    - 1387069926
+    - 1387069926
+    - 1387069926
+    - 1387069926
+    - 1387069926
+    - 1387069926
+    - 1387070113
+    - 1387070112
+    - 1387070112
+    - 1387070112
+    - 1387070112
+    - 1387070112
+    - 1387070113
+    - 1387070112
+    - 1387070112
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
