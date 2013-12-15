@@ -8,6 +8,11 @@ using System.Collections;
 public abstract class Point : MonoBehaviour {
 	
 	/// <summary>
+	/// The owner of this point
+	/// </summary>
+	public Owner m_owner = Owner.ENEMY;
+	
+	/// <summary>
 	/// The amount of HP that this point has
 	/// </summary>
 	protected int m_hp;

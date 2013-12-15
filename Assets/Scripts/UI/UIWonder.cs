@@ -13,8 +13,8 @@ public class UIWonder : PointUI {
 	private PointWonder m_point;
 
 	void Awake() {
-		m_nameText = MakeText("text-name",m_name, new Vector3(0,20,-1));
-		m_moneyText = MakeText("text-money","", new Vector3(0,10,-1));
+		m_nameText = MakeText("text-name",m_name, new Vector3(0,10,-1));
+		m_moneyText = MakeText("text-money","", new Vector3(0,-10,-1));
 		m_children.Add(m_nameText);
 		m_children.Add(m_moneyText);
 		m_point = GetComponent<PointWonder>();
@@ -30,9 +30,11 @@ public class UIWonder : PointUI {
 		}
 		
 		if(IsOpen()) {
-			tk2dTextMesh mesh = m_moneyText.GetComponent<tk2dTextMesh>();
-			mesh.text = "Destroy for $" + m_point.money;
-			mesh.Commit();
+			if(m_point.m_owner == Owner.ENEMY) {
+				tk2dTextMesh mesh = m_moneyText.GetComponent<tk2dTextMesh>();
+				mesh.text = "Destroy for $" + m_point.money;
+				mesh.Commit();
+			}
 		}
 	}
 	
