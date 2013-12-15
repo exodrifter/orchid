@@ -2,21 +2,21 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D),typeof(PointWonder))]
-public class MenuWonder : MonoBehaviour {
+public class MenuWonder : PointUI {
 	
 	public tk2dFontData m_font;
 	public string m_name;
 	
-	private bool m_open;
 	private GameObject m_nameText;
 	private GameObject m_moneyText;
 	
 	private PointWonder m_point;
 
 	void Awake() {
-		m_open = false;
-		m_nameText = MakeText(m_name, new Vector3(0,20,-1));
-		m_moneyText = MakeText("", new Vector3(0,10,-1));
+		m_nameText = MakeText("text-name",m_name, new Vector3(0,20,-1));
+		m_moneyText = MakeText("text-money","", new Vector3(0,10,-1));
+		m_children.Add(m_nameText);
+		m_children.Add(m_moneyText);
 		m_point = GetComponent<PointWonder>();
 	}
 	
@@ -29,25 +29,16 @@ public class MenuWonder : MonoBehaviour {
 			SetOpen(false);
 		}
 		
-		if(m_open) {
+		if(IsOpen()) {
 			tk2dTextMesh mesh = m_moneyText.GetComponent<tk2dTextMesh>();
 			mesh.text = "Destroy for $" + m_point.money;
 			mesh.Commit();
 		}
 	}
 	
-	public void SetOpen(bool open) {
-		m_open = open;
-		m_nameText.SetActive(m_open);
-		m_moneyText.SetActive(m_open);
-	}
-	
-	public bool IsOpen() {
-		return m_open;
-	}
-	
-	private GameObject MakeText(string text, Vector3 offset) {
+	private GameObject MakeText(string name, string text, Vector3 offset) {
 		GameObject ret = new GameObject();
+		ret.name = name;
 		ret.transform.parent = this.transform;
 		ret.transform.localPosition = offset;
 		ret.SetActive(false);

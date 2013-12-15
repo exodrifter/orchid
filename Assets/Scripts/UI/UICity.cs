@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MenuCity : MonoBehaviour {
+public class MenuCity : PointUI {
 	
 	public tk2dFontData m_font;
 	
-	private bool m_open;
 	private GameObject m_popText;
 	
 	private PointCity m_point;
 	
 	void Start () {
-		m_popText = MakeText("", new Vector3(0,-10,-1));
+		m_popText = MakeText("text-population","",new Vector3(0,-10,-1));
 		m_point = GetComponent<PointCity>();
 	}
 	
@@ -25,7 +24,7 @@ public class MenuCity : MonoBehaviour {
 		}
 		
 		tk2dTextMesh mesh = m_popText.GetComponent<tk2dTextMesh>();
-		if(m_open) {
+		if(IsOpen()) {
 			mesh.text = "Population: " + m_point.population;
 		} else {
 			mesh.text = ""+m_point.population;
@@ -33,16 +32,9 @@ public class MenuCity : MonoBehaviour {
 		mesh.Commit();
 	}
 	
-	public void SetOpen(bool open) {
-		m_open = open;
-	}
-	
-	public bool IsOpen() {
-		return m_open;
-	}
-	
-	private GameObject MakeText(string text, Vector3 offset) {
+	private GameObject MakeText(string name, string text, Vector3 offset) {
 		GameObject ret = new GameObject();
+		ret.name = name;
 		ret.transform.parent = this.transform;
 		ret.transform.localPosition = offset;
 		ret.SetActive(true);
