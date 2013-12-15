@@ -18,6 +18,11 @@ public class Entity : MonoBehaviour {
 	/// The amount of damage that this point has recieved
 	/// </summary>
 	protected int m_damage;
+
+    /// <summary>
+	/// The type of the entity
+	/// </summary>
+    public Type m_type;
 	
 	public int hp {
 		get { return m_hp; }
@@ -31,8 +36,46 @@ public class Entity : MonoBehaviour {
 	public bool dead {
 		get { return m_damage >= m_hp; }
 	}
+
+    public Type type {
+		get { return m_type; }
+	}
 	
     public Vector2 position {
         get { return transform.position; }
+    }
+
+    void InitBody(){
+        Rigidbody2D rigidBody2D = gameObject.AddComponent<Rigidbody2D>();
+        rigidBody2D.isKinematic = false;
+        rigidBody2D.fixedAngle = true;
+        rigidBody2D.gravityScale = 0f;
+
+
+        BoxCollider2D colliderTemp = gameObject.AddComponent<BoxCollider2D>();
+        colliderTemp.size = gameObject.GetComponent<tk2dSprite>().GetBounds().size;
+        colliderTemp.isTrigger = true;
+    }
+
+    public IEnumerator HitEffect()
+    {
+        gameObject.renderer.enabled = false;
+        for (int i = 0; i < 2; i++)
+        {
+            yield return 0;
+        }
+        gameObject.renderer.enabled = true;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        StartCoroutine(HitEffect());
+        m_damage += damage;
+
+        if(dead){
+            //explode?
+            //TODO how do you want to handle death?
+            //Destroy(gameObject);
+        }
     }
 }

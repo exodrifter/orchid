@@ -2,25 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Unit : MonoBehaviour {
+public class Unit : Entity {
 
 
     private Point m_source, m_destination;
-    private Unit m_attackTarget;
-
-    public enum UnitType { Ground, Air };
-
+    private Entity m_attackTarget;
+    
     public float velocity = 100; // pixels per second
 
-    private GameObject m_range;
+    //private GameObject m_range;
     public float range = 10;
 
     private Munition m_munition;
     private LineRenderer m_lineRenderer;
 
-    public float health = 100;
-
-    public UnitType type = UnitType.Air;
 
     private Timer m_attackTimer;
 
@@ -35,9 +30,9 @@ public class Unit : MonoBehaviour {
         InitBody();
         InitRange();
 
-        //This is for testing
-            gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
-        ///////////////////////
+        //////This is for testing
+        ////    gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
+        ///////////////////////////
 
         m_munition = gameObject.GetComponent<Munition>();
         m_lineRenderer = gameObject.AddComponent<LineRenderer>();
@@ -99,10 +94,17 @@ public class Unit : MonoBehaviour {
         m_source = source;
     }
 
+    //bool canAttack(Unit target){
+    //    if(this.type == UnitType.fighter){
+    //        if(target.type != 
+    //        }
+    //}
+
     //overidable method used to attack an object
-    void Attack(Unit target)
+    void Attack(Entity target)
     {
-        float damage = m_munition.damage;
+        
+        int damage = m_munition.damage;
 
         Laser laser = new Laser(position, target.position, m_munition.colour);
         StartCoroutine(laser.Fade());
@@ -111,27 +113,6 @@ public class Unit : MonoBehaviour {
         if (hitChance <= m_munition.accuracy)
         {
             target.TakeDamage(damage);
-        }
-    }
-
-    public IEnumerator Hit()
-    {
-        gameObject.renderer.enabled = false;
-        for (int i = 0; i < 2; i++)
-        {
-            yield return 0;
-        }
-        gameObject.renderer.enabled = true;
-    }
-
-    void TakeDamage(float damage)
-    {
-        StartCoroutine(Hit());
-        health -= damage;
-
-        if(health < 0){
-            //explode?
-            Destroy(gameObject);
         }
     }
 
