@@ -74,6 +74,9 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
+  boxCollider2D: {fileID: 0}
+  polygonCollider2D: []
+  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -108,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 0
+  m_shootSound: {fileID: 8300000, guid: 2db714f095d7c744788b1aaf7749fdc2, type: 3}
   velocity: 20
   range: 10
 --- !u!1001 &100100000

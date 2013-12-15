@@ -74,6 +74,9 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
+  boxCollider2D: {fileID: 0}
+  polygonCollider2D: []
+  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -90,7 +93,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4801f8eeb939ec4da0d8a9852facd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetType: 1
   colour: {r: 1, g: 0, b: 0, a: 1}
   damage: 1
   attack_time: .300000012
@@ -107,10 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f56e3e5a99ac6d43ad7483e871d9b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_owner: 1
+  m_type: 0
+  m_shootSound: {fileID: 8300000, guid: 2db714f095d7c744788b1aaf7749fdc2, type: 3}
   velocity: 100
   range: 10
-  health: 100
-  type: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
