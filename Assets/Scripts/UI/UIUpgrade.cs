@@ -26,11 +26,11 @@ public class UIUpgrade : MonoBehaviour {
 	}
 	
 	void OnMouseEnter() {
-		transform.position = m_anchoredPosition + new Vector3(0,10,0);
+		transform.localPosition = m_anchoredPosition + new Vector3(0,10,0);
 	}
 	
 	void OnMouseExit() {
-		transform.position = m_anchoredPosition;
+		transform.localPosition = m_anchoredPosition;
 	}
 	
 	void SetPosition(int index) {
@@ -43,6 +43,6 @@ public class UIUpgrade : MonoBehaviour {
 		transform.localPosition = m_anchoredPosition;
 		
 		// Save the anchored position
-		m_anchoredPosition = transform.position;
+		m_anchoredPosition = transform.localPosition;
 	}
 }
