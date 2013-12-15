@@ -53,6 +53,7 @@ MonoBehaviour:
     spriteCollection: {fileID: 0}
   managedSpriteCollection: 0
   loadable: 0
+  atlasFormat: 0
   maxTextureSize: 2048
   forceTextureSize: 0
   forcedTextureWidth: 2048
@@ -593,13 +594,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 056d233cf996de44799164526bafd256, type: 2}
   atlasTextures:
   - {fileID: 2800000, guid: 12c09a137bf4ee64c82c04f13f9d11c9, type: 3}
+  atlasTextureFiles: []
   useTk2dCamera: 0
   targetHeight: 640
   targetOrthoSize: 10
   sizeDef:
     type: 1
     orthoSize: 10
-    pixelsPerMeter: 20
+    pixelsPerMeter: 1
     width: 960
     height: 640
   globalScale: 1
@@ -611,6 +613,7 @@ MonoBehaviour:
   userDefinedTextureSettings: 0
   mipmapEnabled: 0
   anisoLevel: 1
+  physicsEngine: 0
   physicsDepth: .100000001
   disableTrimming: 0
   normalGenerationMode: 0

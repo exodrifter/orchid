@@ -8,7 +8,7 @@ public class Unit : MonoBehaviour {
     private Point m_source, m_destination;
     private Unit m_attackTarget;
 
-    public enum UnitType { Ground, Air };
+    public enum UnitType {fighter,bomber,icbm};
 
     public float velocity = 100; // pixels per second
 
@@ -20,7 +20,7 @@ public class Unit : MonoBehaviour {
 
     public float health = 100;
 
-    public UnitType type = UnitType.Air;
+    public UnitType type = UnitType.fighter;
 
     private Timer m_attackTimer;
 
@@ -29,12 +29,14 @@ public class Unit : MonoBehaviour {
         get { return transform.position; }
     }
 
+    void Awake() {
+        InitBody();
+        InitRange();
+    }
+
     //Use this for initialization
     void Start()
     {
-        InitBody();
-        InitRange();
-
         //This is for testing
             gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
         ///////////////////////
@@ -67,9 +69,9 @@ public class Unit : MonoBehaviour {
         colliderTemp.radius = range;
         colliderTemp.isTrigger = true;
     }
-	
-	// Update is called once per frame
-	void Update ()
+    
+    // Update is called once per frame
+    void Update ()
     {
         if (m_attackTarget)
         { 
@@ -82,21 +84,19 @@ public class Unit : MonoBehaviour {
                 m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
             }
         }
-	}
+    }
 
-    void Target(Point target)
+    public void SetSourceAndTarget(Point source, Point target)
     {
+        // Move the unit to the source
+        m_source = source;
+        this.transform.position = source.position;
+
         // at some point assign the target point and make it point in that direction
         m_destination = target;
 
         Vector2 direction = m_destination.position - m_source.position;
         gameObject.GetComponent<Rigidbody2D>().velocity = direction.normalized * velocity;
-    }
-
-    //TODO this needs a better name
-    void Source(Point source)
-    {
-        m_source = source;
     }
 
     //overidable method used to attack an object

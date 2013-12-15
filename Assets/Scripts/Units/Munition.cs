@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Munition : MonoBehaviour {
 
-    public Unit.UnitType targetType = Unit.UnitType.Air;
+    public Unit.UnitType targetType = Unit.UnitType.fighter;
 
     public Color colour = Color.red;
     
