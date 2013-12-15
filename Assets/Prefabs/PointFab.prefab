@@ -110,6 +110,7 @@ MonoBehaviour:
   m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
   m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
   m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
+  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
