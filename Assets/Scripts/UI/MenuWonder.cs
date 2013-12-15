@@ -7,21 +7,17 @@ public class MenuWonder : MonoBehaviour {
 	public tk2dFontData m_font;
 	public string m_name;
 	
-	private string m_theme = "placeholder-";
-	
 	private bool m_open;
 	private GameObject m_nameText;
 	private GameObject m_moneyText;
 	
 	private Point m_point;
-	private Timer m_openTimer;
 
 	void Awake() {
 		m_open = false;
 		m_nameText = MakeText(m_name, new Vector3(0,20,-1));
 		m_moneyText = MakeText("", new Vector3(0,10,-1));
 		m_point = GetComponent<PointWonder>();
-		m_openTimer = new Timer(.2f);
 	}
 	
 	void Update() {

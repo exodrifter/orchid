@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PointTown : Point {
+public class PointCity : Point {
 	
 	private int m_population;
 	private Timer m_timer;
@@ -14,6 +14,7 @@ public class PointTown : Point {
 		m_hp = 50;
 		m_money = 2;
 		m_population = 1;
+		m_timer = new Timer(10.0f);
 	}
 	
 	void Update() {

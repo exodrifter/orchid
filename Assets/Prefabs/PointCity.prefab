@@ -13,9 +13,8 @@ GameObject:
   - 114: {fileID: 11400002}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: PointWonder
+  m_Name: PointCity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 483845e376e84da4f8da06a5bf5a94f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 16c3c33d8b5189b4488f5f1585219b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11400002
@@ -96,7 +95,7 @@ MonoBehaviour:
   collection: {fileID: 11400000, guid: 76f29aa4a68d5914da3d3aa22e2892cd, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 4
+  _spriteId: 5
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -105,19 +104,6 @@ MonoBehaviour:
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
   renderLayer: 0
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44c59cb6df50eb246bc6b6848e04e114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_name: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
