@@ -39,7 +39,7 @@ public class Unit : MonoBehaviour {
             gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
         ///////////////////////
 
-        m_munition = gameObject.AddComponent<Munition>();
+        m_munition = gameObject.GetComponent<Munition>();
         m_lineRenderer = gameObject.AddComponent<LineRenderer>();
         
         m_attackTimer = new Timer();
@@ -105,9 +105,13 @@ public class Unit : MonoBehaviour {
         float damage = m_munition.damage;
 
         Laser laser = new Laser(position, target.position, m_munition.colour);
+        StartCoroutine(laser.Fade());
 
-
-        target.TakeDamage(damage);
+        float hitChance = Random.Range(0, 1.0f);
+        if (hitChance >= m_munition.accuracy)
+        {
+            target.TakeDamage(damage);
+        }
     }
 
     void TakeDamage(float damage)
