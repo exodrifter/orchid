@@ -54,16 +54,32 @@ MonoBehaviour:
     dataGUID: cb3bf0ad5e92744d6856da9a7d5a3125
     managed: 0
     loadable: 0
+  - assetGUID: 0795e81b1d85b1c4abf56124353c18d2
+    dataGUID: 2a0d61a04e92f6948ba962934cc9b131
+    managed: 0
+    loadable: 0
   spriteCollectionIndex:
-  - name: MapCollection
+  - name: PointCollection
     spriteCollectionGUID: 85752a4fe59f5fd4a8958921512d30f6
     spriteCollectionDataGUID: 76f29aa4a68d5914da3d3aa22e2892cd
     spriteNames:
     - placeholder-location
+    - placeholder-bomber
+    - placeholder-icbm
+    - placeholder-fighter
+    - placeholder-wonder
     spriteTextureGUIDs:
     - de718633242024f4e8a7ec998e3b830e
+    - 1bed01f01bf32f842a2bcef133184734
+    - a9cc59894e2d4ff43ac77dccf4ef6a45
+    - c2551cc85d2731c4097eeb75b8437cd8
+    - cccd85d21d6513c46a428a71192d7ac8
     spriteTextureTimeStamps:
     - 1387042453.24745
+    - 1387044835.84644
+    - 1387044881.11847
+    - 1387044860.23722
+    - 1387055789.62507
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -77,6 +93,19 @@ MonoBehaviour:
     - 89ef4ed8c14ed964691b82ffc27c5d37
     spriteTextureTimeStamps:
     - 1387049390.30934
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: WorldCollection
+    spriteCollectionGUID: 51251ad07188c7c4e80a59653626de97
+    spriteCollectionDataGUID: c2775c6caa8dceb4ebd50e40f1abf02b
+    spriteNames:
+    - world
+    spriteTextureGUIDs:
+    - d5c2fbaf7b26b0e408a91b35976f826c
+    spriteTextureTimeStamps:
+    - 1387053923
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

@@ -45,16 +45,16 @@ MonoBehaviour:
   - name: placeholder-location
     boundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
+    - {x: 10, y: 10, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
-    texelSize: {x: 3, y: 3}
+    - {x: 10, y: 10, z: 0}
+    texelSize: {x: 1, y: 1}
     positions:
-    - {x: -15, y: -15, z: 0}
-    - {x: 15, y: -15, z: 0}
-    - {x: -15, y: 15, z: 0}
-    - {x: 15, y: 15, z: 0}
+    - {x: -5, y: -5, z: 0}
+    - {x: 5, y: -5, z: 0}
+    - {x: -5, y: 5, z: 0}
+    - {x: 5, y: 5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -86,16 +86,16 @@ MonoBehaviour:
   - name: placeholder-bomber
     boundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
+    - {x: 10, y: 10, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
-    texelSize: {x: 3, y: 3}
+    - {x: 10, y: 10, z: 0}
+    texelSize: {x: 1, y: 1}
     positions:
-    - {x: -15, y: -15, z: 0}
-    - {x: 15, y: -15, z: 0}
-    - {x: -15, y: 15, z: 0}
-    - {x: 15, y: 15, z: 0}
+    - {x: -5, y: -5, z: 0}
+    - {x: 5, y: -5, z: 0}
+    - {x: -5, y: 5, z: 0}
+    - {x: 5, y: 5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -127,16 +127,16 @@ MonoBehaviour:
   - name: placeholder-icbm
     boundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
+    - {x: 10, y: 10, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
-    texelSize: {x: 3, y: 3}
+    - {x: 10, y: 10, z: 0}
+    texelSize: {x: 1, y: 1}
     positions:
-    - {x: -15, y: -15, z: 0}
-    - {x: 15, y: -15, z: 0}
-    - {x: -15, y: 15, z: 0}
-    - {x: 15, y: 15, z: 0}
+    - {x: -5, y: -5, z: 0}
+    - {x: 5, y: -5, z: 0}
+    - {x: -5, y: 5, z: 0}
+    - {x: 5, y: 5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -168,16 +168,16 @@ MonoBehaviour:
   - name: placeholder-fighter
     boundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
+    - {x: 10, y: 10, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 30, y: 30, z: 0}
-    texelSize: {x: 3, y: 3}
+    - {x: 10, y: 10, z: 0}
+    texelSize: {x: 1, y: 1}
     positions:
-    - {x: -15, y: -15, z: 0}
-    - {x: 15, y: -15, z: 0}
-    - {x: -15, y: 15, z: 0}
-    - {x: 15, y: 15, z: 0}
+    - {x: -5, y: -5, z: 0}
+    - {x: 5, y: -5, z: 0}
+    - {x: -5, y: 5, z: 0}
+    - {x: 5, y: 5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -206,6 +206,47 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
+  - name: placeholder-wonder
+    boundsData:
+    - {x: -1.1920929e-07, y: -1.1920929e-07, z: 0}
+    - {x: 8, y: 8, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 10, y: 10, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -4, y: -4, z: 0}
+    - {x: 3.99999976, y: -4, z: 0}
+    - {x: -4, y: 3.99999976, z: 0}
+    - {x: 3.99999976, y: 3.99999976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .625031233, y: 3.12500015e-05}
+    - {x: .874968767, y: 3.12500015e-05}
+    - {x: .625031233, y: .249968752}
+    - {x: .874968767, y: .249968752}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: d69104dc5bc883e4ba248fcbc66d50ec, type: 2}
+    materialId: 0
+    sourceTextureGUID: cccd85d21d6513c46a428a71192d7ac8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -217,12 +258,12 @@ MonoBehaviour:
   textureMipMaps: 0
   allowMultipleAtlases: 0
   spriteCollectionGUID: 85752a4fe59f5fd4a8958921512d30f6
-  spriteCollectionName: MapCollection
+  spriteCollectionName: PointCollection
   assetName: 
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: .5
-  buildKey: 670481217
+  buildKey: 1567108102
   dataGuid: 76f29aa4a68d5914da3d3aa22e2892cd
   managedSpriteCollection: 0
   hasPlatformData: 0

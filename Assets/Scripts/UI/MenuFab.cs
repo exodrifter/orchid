@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class FabPointMenu : MonoBehaviour {
+public class MenuFab : MonoBehaviour {
 	
 	private string m_theme = "placeholder-";
 	
@@ -10,8 +10,8 @@ public class FabPointMenu : MonoBehaviour {
 	private GameObject m_fighterButton;
 	private GameObject m_bomberButton;
 	private GameObject m_icbmButton;
-	private int m_xMargin = 50;
-	private int m_yMargin = 40;
+	private int m_xMargin = 15;
+	private int m_yMargin = 15;
 	
 	void Awake() {
 		m_open = false;
@@ -21,9 +21,8 @@ public class FabPointMenu : MonoBehaviour {
 	}
 	
 	void Update() {
-		Vector3 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		
 		if(Input.GetMouseButtonDown(0)) {
+			Vector3 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			// Check if the click was on the point
 			if(collider2D.OverlapPoint(clickPos)) {
 				SetOpen(!IsOpen());
@@ -51,7 +50,7 @@ public class FabPointMenu : MonoBehaviour {
 	private GameObject CreateButton(string type, Vector2 offset) {
 		GameObject ret = new GameObject();
 		ret.transform.parent = this.transform;
-		ret.transform.position = offset;
+		ret.transform.localPosition = offset;
 		ret.SetActive(false);
 		
 		tk2dSprite sprite = ret.AddComponent<tk2dSprite>();
