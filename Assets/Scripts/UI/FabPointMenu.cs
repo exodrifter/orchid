@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class PointButton : MonoBehaviour {
+public class FabPointMenu : MonoBehaviour {
 	
 	private string m_theme = "placeholder-";
 	
@@ -43,7 +43,7 @@ public class PointButton : MonoBehaviour {
 		m_bomberButton.SetActive(m_open);
 		m_icbmButton.SetActive(m_open);
 	}
-
+	
 	public bool IsOpen() {
 		return m_open;
 	}
