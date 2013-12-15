@@ -38,4 +38,8 @@ public class Point : MonoBehaviour {
 	public int money {
 		get { return m_money; }
 	}
+
+    public Vector2 position {
+        get { return transform.position; }
+    }
 }
