@@ -1,26 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(BoxCollider2D),typeof(PointWonder))]
-public class MenuWonder : MonoBehaviour {
+public class MenuCity : MonoBehaviour {
 	
 	public tk2dFontData m_font;
-	public string m_name;
 	
 	private bool m_open;
-	private GameObject m_nameText;
-	private GameObject m_moneyText;
+	private GameObject m_popText;
 	
-	private PointWonder m_point;
-
-	void Awake() {
-		m_open = false;
-		m_nameText = MakeText(m_name, new Vector3(0,20,-1));
-		m_moneyText = MakeText("", new Vector3(0,10,-1));
-		m_point = GetComponent<PointWonder>();
+	private PointCity m_point;
+	
+	void Start () {
+		m_popText = MakeText("", new Vector3(0,-10,-1));
+		m_point = GetComponent<PointCity>();
 	}
 	
-	void Update() {
+	void Update () {
 		// Check if the mouse is hovering
 		Vector3 hoverPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		if(collider2D.OverlapPoint(hoverPos)) {
@@ -29,17 +24,17 @@ public class MenuWonder : MonoBehaviour {
 			SetOpen(false);
 		}
 		
+		tk2dTextMesh mesh = m_popText.GetComponent<tk2dTextMesh>();
 		if(m_open) {
-			tk2dTextMesh mesh = m_moneyText.GetComponent<tk2dTextMesh>();
-			mesh.text = "Destroy for $" + m_point.money;
-			mesh.Commit();
+			mesh.text = "Population: " + m_point.population;
+		} else {
+			mesh.text = ""+m_point.population;
 		}
+		mesh.Commit();
 	}
 	
 	public void SetOpen(bool open) {
 		m_open = open;
-		m_nameText.SetActive(m_open);
-		m_moneyText.SetActive(m_open);
 	}
 	
 	public bool IsOpen() {
@@ -50,7 +45,7 @@ public class MenuWonder : MonoBehaviour {
 		GameObject ret = new GameObject();
 		ret.transform.parent = this.transform;
 		ret.transform.localPosition = offset;
-		ret.SetActive(false);
+		ret.SetActive(true);
 		
 		tk2dTextMesh mesh = ret.AddComponent<tk2dTextMesh>();
 		mesh.font = m_font;

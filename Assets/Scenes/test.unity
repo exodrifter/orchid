@@ -87,6 +87,7 @@ GameObject:
   - 114: {fileID: 91434534}
   - 61: {fileID: 91434533}
   - 114: {fileID: 91434531}
+  - 114: {fileID: 91434532}
   m_Layer: 0
   m_Name: PointCity
   m_TagString: Untagged
@@ -117,6 +118,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c3c33d8b5189b4488f5f1585219b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &91434532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91434529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78b5a3ca05a4be4a82f6c4a541388fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
 --- !u!61 &91434533
 BoxCollider2D:
   m_ObjectHideFlags: 0
