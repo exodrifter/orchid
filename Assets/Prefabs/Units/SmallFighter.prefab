@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 0
-  m_shootSound: {fileID: 8300000, guid: 2db714f095d7c744788b1aaf7749fdc2, type: 3}
+  m_shootSound: {fileID: 8300000, guid: 86d68cf77f4c18a4fb653d1a88470769, type: 3}
   velocity: 30
   range: 10
 --- !u!1001 &100100000

@@ -130,7 +130,7 @@ public class Unit : Entity {
         Laser laser = new Laser(position, target.position, m_munition.colour);
         StartCoroutine(laser.Fade());
 
-        AudioSource.PlayClipAtPoint(m_shootSound,transform.position, Random.Range(0.4f,0.7f));
+        AudioSource.PlayClipAtPoint(m_shootSound,transform.position, Random.Range(0.01f,0.3f));
 
         float hitChance = Random.Range(0, 1.0f);
         if (hitChance <= m_munition.accuracy){
