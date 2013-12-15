@@ -1,43 +1,53 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Unit : MonoBehaviour {
 
 
     private Point m_source, m_destination;
-    private Unit m_target;
+    private Unit m_attackTarget;
 
     public enum UnitType { Ground, Air };
 
     public float velocity = 100; // pixels per second
-    private Vector2 m_direction;
 
     private GameObject m_range;
     public float range = 10;
 
-    public GameObject munition;
+    private Munition m_munition;
+    private LineRenderer m_lineRenderer;
 
-    public int health = 100;
+    public float health = 100;
 
     public UnitType type = UnitType.Air;
 
-    public int shootFrame, shootCount;
+    private Timer m_attackTimer;
+
+    public Vector2 position
+    {
+        get { return transform.position; }
+    }
 
     //Use this for initialization
     void Start()
     {
-        m_direction.x = 0;
-        m_direction.y = 0;
-
-        shootFrame = 0;
-        shootCount = 20;
-
         InitBody();
         InitRange();
+
+        //This is for testing
+            gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
+        ///////////////////////
+
+        m_munition = gameObject.AddComponent<Munition>();
+        m_lineRenderer = gameObject.AddComponent<LineRenderer>();
+        
+        m_attackTimer = new Timer();
+        m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
     }
 
     void InitBody(){
-        Rigidbody2D rigidBody2D = gameObject.AddComponent("Rigidbody2D") as Rigidbody2D;
+        Rigidbody2D rigidBody2D = gameObject.AddComponent<Rigidbody2D>();
         rigidBody2D.isKinematic = false;
         rigidBody2D.fixedAngle = true;
         rigidBody2D.gravityScale = 0f;
@@ -59,86 +69,60 @@ public class Unit : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update ()
+    {
+        if (m_attackTarget)
+        { 
+            m_attackTimer.elapsed += Time.deltaTime;
+            while (m_attackTimer.HasElapsed())
+            {
+                Attack(m_attackTarget);
+
+                m_attackTimer.SetBack();
+                m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
+            }
+        }
 	}
 
-    void Target(Point target) {
+    void Target(Point target)
+    {
         // at some point assign the target point and make it point in that direction
         m_destination = target;
-        m_direction = new Vector2(m_destination.position.x - transform.position.x, m_destination.position.y - transform.position.y);
-        m_direction.Normalize();
+
+        Vector2 direction = m_destination.position - m_source.position;
+        gameObject.GetComponent<Rigidbody2D>().velocity = direction.normalized * velocity;
     }
 
-    void Source(Point source) {
+    //TODO this needs a better name
+    void Source(Point source)
+    {
         m_source = source;
     }
 
-    //This function is called every fixed framerate frame
-    void FixedUpdate(){
-        Vector2 currentPosition = GetPosition();
-
-        float newX = (velocity * m_direction.x * Time.deltaTime) + currentPosition.x;
-        float newY = (velocity * m_direction.y * Time.deltaTime) + currentPosition.y;
-
-        Vector2 newPosition = new Vector2(newX, newY);
-
-        transform.position = newPosition;
-
-        if (m_target)
-        {
-            if (shootFrame == 0)
-            {
-                Attack(m_target);
-                shootFrame++;
-            }
-            else
-            {
-                shootFrame++;
-                if (shootFrame == shootCount)
-                {
-                    shootFrame = 0;
-                }
-            }
-
-        }
-    }
-    
-    //returns the current position of the Unit
-    Vector2 GetPosition(){
-        float myX = transform.position.x;
-        float myY = transform.position.y;
-        
-        return new Vector2(myX, myY);
-    }
-
     //overidable method used to attack an object
-    void Attack(Unit target){
-        //fire current unity munition at target
-        //GameObject payloadGameObject = ((GameObject)Instantiate(munition));
-        //Munition payloadMunition = payloadGameObject.GetComponent<Munition>();
+    void Attack(Unit target)
+    {
+        float damage = m_munition.damage;
 
-        //payloadMunition.gameObject.transform.position = transform.position;
+        Laser laser = new Laser(position, target.position, m_munition.colour);
 
-        //Vector2 fireDirection = target.GetPosition() - GetPosition();
-        //fireDirection.Normalize();
 
-        //payloadMunition.FireAt(transform.position, fireDirection);
+        target.TakeDamage(damage);
     }
 
-    void TakeDamage(Munition bullet){
-        
+    void TakeDamage(float damage)
+    {
+        health -= damage;
     }
 
     //OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Triggered by " + other.GetType());
-        if (other is BoxCollider2D) {
-            m_target = other.gameObject.GetComponent<Unit>();
+        Debug.Log(gameObject.name + " triggered by " + other.GetType());
+        if (other is BoxCollider2D)
+        {
+            m_attackTarget = other.gameObject.GetComponent<Unit>();
         }
 
-    }
-
-   
+    }   
 }

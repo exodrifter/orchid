@@ -281,11 +281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 2
   range: 10
-  munition: {fileID: 100000, guid: 9625f4aa53ad45946bede10965748eb8, type: 2}
   health: 100
   type: 1
-  shootFrame: 0
-  shootCount: 0
 --- !u!114 &1646526758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,11 +374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 0
   range: 10
-  munition: {fileID: 100000, guid: 9625f4aa53ad45946bede10965748eb8, type: 2}
   health: 100
   type: 1
-  shootFrame: 0
-  shootCount: 0
 --- !u!114 &1829239879
 MonoBehaviour:
   m_ObjectHideFlags: 0
