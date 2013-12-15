@@ -72,6 +72,9 @@ public class UIFab : PointUI {
 				else {
 					if(IsOpen()) {
 						AudioSource.PlayClipAtPoint(m_cancelSound,transform.position,0.5f);
+						foreach(Entity.Type type in m_spawnList) {
+							State.PlayerMoney += State.GetCostOf(type);
+						}
 						m_spawnList.Clear();
 					}
 					SetOpen(false);
