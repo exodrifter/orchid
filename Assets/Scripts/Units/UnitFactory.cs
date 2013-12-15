@@ -6,6 +6,8 @@ public class UnitFactory : MonoBehaviour {
 	public int m_fighterLevel = 0;
 	public int m_bomberLevel = 0;
 	
+    public Owner owner;
+
 	public GameObject fighterSmall;
 	public GameObject fighterMedium;
 	public GameObject fighterBig;
@@ -36,6 +38,7 @@ public class UnitFactory : MonoBehaviour {
 			}
 			break;
 		}
+        prefab.GetComponent<Entity>().m_owner = owner;
 		return Instantiate(prefab) as GameObject;
 	}
 }

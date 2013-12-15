@@ -13,7 +13,6 @@ public class Laser{
             Color c = m_OGColour;
             c.a = f;
             m_renderer.SetColors(c, c);
-            Debug.Log("colour is " + c);
             yield return 0;
         }
         GameObject.Destroy(m_gameObject);

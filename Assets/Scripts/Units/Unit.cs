@@ -75,11 +75,12 @@ public class Unit : Entity {
     {
         if (m_attackTarget)
         { 
+            
             m_attackTimer.elapsed += Time.deltaTime;
             while (m_attackTimer.HasElapsed())
             {
                 Attack(m_attackTarget);
-
+                Debug.Log("Update loop attacking " + m_attackTarget);
                 m_attackTimer.SetBack();
                 m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
             }
@@ -123,26 +124,30 @@ public class Unit : Entity {
     //overidable method used to attack an object
     void Attack(Entity target)
     {
-        if(CanAttack (target)){
-            int damage = m_munition.damage;
+        int damage = m_munition.damage;
 
-            Laser laser = new Laser(position, target.position, m_munition.colour);
-            StartCoroutine(laser.Fade());
+        Laser laser = new Laser(position, target.position, m_munition.colour);
+        StartCoroutine(laser.Fade());
 
-            float hitChance = Random.Range(0, 1.0f);
-            if (hitChance <= m_munition.accuracy){
-                target.TakeDamage(damage);
-            }
+        float hitChance = Random.Range(0, 1.0f);
+        if (hitChance <= m_munition.accuracy){
+            target.TakeDamage(damage);
         }
     }
 
     //OnTriggerEnter is called when the Collider other enters the trigger.
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(gameObject.name + " triggered by " + other.GetType());
         if (other is BoxCollider2D)
         {
-            m_attackTarget = other.gameObject.GetComponent<Unit>();
+            Entity possibleTarget = other.gameObject.GetComponent<Entity>();
+            if(CanAttack (possibleTarget)){
+                Debug.Log("Setting attackTarget of type " + possibleTarget.type);
+                m_attackTarget = possibleTarget;
+
+                m_attackTimer.elapsed = m_attackTimer.time;
+            }
         }
     }
 

@@ -90,7 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4801f8eeb939ec4da0d8a9852facd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetType: 0
   colour: {r: 1, g: 0, b: 0, a: 1}
   damage: 10
   attack_time: 2
@@ -107,10 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f56e3e5a99ac6d43ad7483e871d9b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 100
+  m_owner: 0
+  m_type: 0
+  velocity: 20
   range: 10
-  health: 100
-  type: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
