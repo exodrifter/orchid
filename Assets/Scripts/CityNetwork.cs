@@ -3,12 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class CityNetwork : MonoBehaviour {
+	private const float SPAWN_TIME = 5.0f;
+	private const float SPAWN_TIME_VARIANCE = 5.0f;
 	
 	private List<PointCity> m_list = new List<PointCity>();
 	
-	private float m_spawnTime = 5.0f;
-	private float m_spawnTimeVariance = 5.0f;
-	private Timer m_spawnTimer = new Timer(5);
+	private Timer m_spawnTimer;
+	
+	void Awake() {
+		m_spawnTimer = new Timer();
+		m_spawnTimer.time = SPAWN_TIME + Random.Range(0,SPAWN_TIME_VARIANCE);
+	}
 	
 	void Start() {
 		m_spawnTimer.Reset();
@@ -23,7 +28,7 @@ public class CityNetwork : MonoBehaviour {
 			int index = Random.Range(0,m_list.Count-1);
 			m_list[index].exists = true;
 			m_spawnTimer.SetBack();
-			m_spawnTimer.time = m_spawnTime + Random.Range(0,m_spawnTimeVariance);
+			m_spawnTimer.time = SPAWN_TIME + Random.Range(0,SPAWN_TIME_VARIANCE);
 		}
 	}
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PointCity : Point {
+	private const float GROWTH_TIME = 10.0f;
 	
 	private int m_population;
 	public bool m_exists;
@@ -20,7 +21,7 @@ public class PointCity : Point {
 	}
 	
 	void Awake() {
-		m_timer = new Timer(10.0f);
+		m_timer = new Timer(GROWTH_TIME);
 		renderer.enabled = exists;
 		Reset();
 	}
@@ -37,6 +38,14 @@ public class PointCity : Point {
 				m_hp = m_population * 50;
 				m_money = m_population * 2;
 				m_timer.SetBack();
+
+				if(9 < population) {
+					GetComponent<tk2dSprite>().SetSprite("BigCity");
+				} else if(4 < population) {
+					GetComponent<tk2dSprite>().SetSprite("MedCity");
+				} else {
+					GetComponent<tk2dSprite>().SetSprite("SmallCity");
+				}
 			}
 		} else {
 			exists = false;
@@ -44,6 +53,7 @@ public class PointCity : Point {
 	}
 	
 	void Reset() {
+		GetComponent<tk2dSprite>().SetSprite("SmallCity");
 		m_hp = 50;
 		m_money = 2;
 		m_population = 1;

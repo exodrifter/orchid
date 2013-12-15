@@ -2855,6 +2855,7 @@ Transform:
   m_Children:
   - {fileID: 1025051028}
   - {fileID: 422284091}
+  - {fileID: 1108578946}
   - {fileID: 609772680}
   - {fileID: 1240853272}
   - {fileID: 314978353}
@@ -2862,7 +2863,6 @@ Transform:
   - {fileID: 1483048400}
   - {fileID: 1366864911}
   - {fileID: 2016294738}
-  - {fileID: 1108578946}
   m_Father: {fileID: 512731269}
 --- !u!1001 &1965837440
 Prefab:

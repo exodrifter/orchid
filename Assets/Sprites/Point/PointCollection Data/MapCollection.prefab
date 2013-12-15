@@ -290,17 +290,17 @@ MonoBehaviour:
     attachPoints: []
   - name: MedCity
     boundsData:
-    - {x: .5, y: -.5, z: 0}
+    - {x: .5, y: 3.5, z: 0}
     - {x: 7, y: 7, z: 0}
     untrimmedBoundsData:
-    - {x: .5, y: 0, z: 0}
+    - {x: .5, y: 4, z: 0}
     - {x: 7, y: 8, z: 0}
     texelSize: {x: 1, y: 1}
     positions:
-    - {x: -3, y: -4, z: 0}
-    - {x: 4, y: -4, z: 0}
-    - {x: -3, y: 3, z: 0}
-    - {x: 4, y: 3, z: 0}
+    - {x: -3, y: 0, z: 0}
+    - {x: 4, y: 0, z: 0}
+    - {x: -3, y: 7, z: 0}
+    - {x: 4, y: 7, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -618,17 +618,17 @@ MonoBehaviour:
     attachPoints: []
   - name: BigCity
     boundsData:
-    - {x: 0, y: -.5, z: 0}
+    - {x: 0, y: 4.5, z: 0}
     - {x: 8, y: 9, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: -.5, z: 0}
+    - {x: 0, y: 4.5, z: 0}
     - {x: 8, y: 9, z: 0}
     texelSize: {x: 1, y: 1}
     positions:
-    - {x: -4, y: -5, z: 0}
-    - {x: 4, y: -5, z: 0}
-    - {x: -4, y: 4, z: 0}
-    - {x: 4, y: 4, z: 0}
+    - {x: -4, y: 0, z: 0}
+    - {x: 4, y: 0, z: 0}
+    - {x: -4, y: 9, z: 0}
+    - {x: 4, y: 9, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -741,17 +741,17 @@ MonoBehaviour:
     attachPoints: []
   - name: SmallCity
     boundsData:
-    - {x: 0, y: -.5, z: 0}
+    - {x: 0, y: 2.5, z: 0}
     - {x: 6, y: 5, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: -.5, z: 0}
+    - {x: 0, y: 2.5, z: 0}
     - {x: 6, y: 5, z: 0}
     texelSize: {x: 1, y: 1}
     positions:
-    - {x: -3, y: -3, z: 0}
-    - {x: 3, y: -3, z: 0}
-    - {x: -3, y: 2, z: 0}
-    - {x: 3, y: 2, z: 0}
+    - {x: -3, y: 0, z: 0}
+    - {x: 3, y: 0, z: 0}
+    - {x: -3, y: 5, z: 0}
+    - {x: 3, y: 5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -837,7 +837,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: .5
-  buildKey: 1906616463
+  buildKey: 1493221535
   dataGuid: 76f29aa4a68d5914da3d3aa22e2892cd
   managedSpriteCollection: 0
   hasPlatformData: 0

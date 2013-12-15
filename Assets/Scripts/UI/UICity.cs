@@ -10,7 +10,7 @@ public class UICity : PointUI {
 	private PointCity m_point;
 	
 	void Start () {
-		m_popText = MakeText("text-population","",new Vector3(0,-10,-1));
+		m_popText = MakeText("text-population","",new Vector3(0,-5,-1));
 		m_point = GetComponent<PointCity>();
 	}
 	
