@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class State : MonoBehaviour {
 	
@@ -19,7 +19,7 @@ public class State : MonoBehaviour {
 	
 	private static Timer m_gptTimer;
     private static MoneyEffect m_moneyEffect;
-	
+
 	private static int m_playerMoney = 20;
 	public static int PlayerMoney {
 		get { return m_playerMoney; }
@@ -43,6 +43,15 @@ public class State : MonoBehaviour {
         m_moneyEffect = gameObject.AddComponent<MoneyEffect>();        
         m_moneyEffect.SetParent(GameObject.Find("counter-money").transform);
         m_moneyEffect.SetOffset(new Vector2(-7, -20));
+
+		// Reset AI variables
+		m_playerCities = new List<PointCity>();
+		m_playerFabs = new List<PointFab>();
+		m_playerWonders = new List<PointWonder>();
+		
+		m_enemyCities = new List<PointCity>();
+		m_enemyFabs = new List<PointFab>();
+		m_enemyWonders = new List<PointWonder>();
 	}
 	
 	void Update() {
@@ -68,4 +77,63 @@ public class State : MonoBehaviour {
 			return -1;
 		}
 	}
+	
+	#region AI
+	
+	private List<PointCity>   m_playerCities;
+	private List<PointFab>    m_playerFabs;
+	private List<PointWonder> m_playerWonders;
+	
+	private List<PointCity>   m_enemyCities;
+	private List<PointFab>    m_enemyFabs;
+	private List<PointWonder> m_enemyWonders;
+	
+	public List<PointCity> PlayerCities {
+		get { return m_playerCities; }
+	}
+	
+	public List<PointFab> PlayerFabs {
+		get { return m_playerFabs; }
+	}
+	
+	public List<PointWonder> PlayerWonders {
+		get { return m_playerWonders; }
+	}
+	
+	public List<PointCity> EnemyCities {
+		get { return m_enemyCities; }
+	}
+	
+	public List<PointFab> EnemyFabs {
+		get { return m_enemyFabs; }
+	}
+	
+	public List<PointWonder> EnemyWonders {
+		get { return m_enemyWonders; }
+	}
+	
+	public void RegisterPointForAI(Point p) {
+		Debug.Log(p);
+		if(p is PointCity) {
+			if(p.m_owner == Owner.PLAYER) {
+				m_playerCities.Add(p as PointCity);
+			} else {
+				m_enemyCities.Add(p as PointCity);
+			}
+		} else if(p is PointFab) {
+			if(p.m_owner == Owner.PLAYER) {
+				m_playerFabs.Add(p as PointFab);
+			} else {
+				m_enemyFabs.Add(p as PointFab);
+			}
+		} else if(p is PointWonder) {
+			if(p.m_owner == Owner.PLAYER) {
+				m_playerWonders.Add(p as PointWonder);
+			} else {
+				m_enemyWonders.Add(p as PointWonder);
+			}
+		}
+	}
+	
+	#endregion
 }
