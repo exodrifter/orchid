@@ -65,7 +65,7 @@ public class UIFab : PointUI {
 			// Check if it collides with any other points
 			else {
 				Point destination = ClickedOnPoint(clickPos);
-				if(null != destination) {
+				if(null != destination && IsOpen()) {
 					foreach(Entity.Type type in m_spawnList) {
 						GameObject unit = m_unitFactory.SpawnUnit(type);
 						unit.GetComponent<Unit>().SetSourceAndTarget(m_point,destination);
@@ -73,8 +73,12 @@ public class UIFab : PointUI {
 						m_spawnQueue.Enqueue(unit);
 					}
 					StopAllCoroutines();
-					AudioSource.PlayClipAtPoint(m_launchSound,transform.position,0.5f);
+					if(m_spawnList.Count > 0) {
+						m_spawnList.Clear();
+						AudioSource.PlayClipAtPoint(m_launchSound,transform.position,0.5f);
+					}
 					StartCoroutine(SpawnUnits());
+					SetOpen(false);
 				}
 				// Player clicked in an invalid location, cancel everything
 				else {
