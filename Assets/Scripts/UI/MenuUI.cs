@@ -5,41 +5,63 @@ public class MenuUI : MonoBehaviour {
 
     public tk2dFontData m_font = State.instance.defaultFont;
 
+    public AudioClip m_hoverSound;
+    public AudioClip m_leaveSound;
+    public AudioClip m_clickSound;
+
+    private enum state{off, hover, clicked};
+    state m_buttonState = state.off;
+
 	// Use this for initialization
 	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	
-	}
-
-    public IEnumerator HideEffect()
-    {
-        for (int i = 0; i < 30; i++)        {
-            transform.position = transform.position - new Vector3(0, -1, 0);
-            yield return 30;
-        }        
+	    BoxCollider2D boxCollider = gameObject.AddComponent<BoxCollider2D>();
+	    boxCollider.size = gameObject.GetComponent<tk2dSprite>().GetBounds().size;
     }
 
-    private GameObject MakeText(string name, string text, Vector3 offset, Color color, float scale = 1) {
-		GameObject ret = new GameObject();
-		ret.name = name;
-		ret.transform.parent = this.transform;
-		ret.transform.localPosition = offset;
-		ret.SetActive(false);
-		
-		tk2dTextMesh mesh = ret.AddComponent<tk2dTextMesh>();
-		mesh.font = m_font;
-		mesh.text = text;
-        mesh.color = color;
-        mesh.scale = new Vector3(scale, scale, 1);
-		mesh.maxChars = 20;
-		mesh.anchor = TextAnchor.MiddleCenter;
-		mesh.Commit();
-		
-		return ret;
-	}
+    void Update() {
+        switch (m_buttonState)
+        {
+            case state.off:
+                GetComponent<tk2dSprite>().SetSprite("start-button-default");
+                break;
+            case state.hover:
+                GetComponent<tk2dSprite>().SetSprite("start-button-hover");
+                break;
+            case state.clicked:
+                GetComponent<tk2dSprite>().SetSprite("start-button-click");
+                break;
+            default:
+                break;
+        }
+    }
+	
+    public IEnumerator LoadLevel()
+    {
+        for (int i = 0; i < 30; i++)        {
+            yield return 0;
+        }
+        Application.LoadLevel("test");
+    }
+
+    void OnMouseDown(){
+        if(m_buttonState != state.clicked){
+            AudioSource.PlayClipAtPoint(m_clickSound,transform.position,0.7f);
+            m_buttonState = state.clicked;
+        }
+        StartCoroutine(LoadLevel());
+    }
+
+	void OnMouseEnter(){
+        if(m_buttonState != state.clicked){
+            AudioSource.PlayClipAtPoint(m_hoverSound,transform.position,0.7f);
+            m_buttonState = state.hover;
+        }
+    }
+
+    void OnMouseExit(){
+        if(m_buttonState != state.clicked){
+            AudioSource.PlayClipAtPoint(m_leaveSound,transform.position,0.7f);
+            m_buttonState = state.off;
+        }
+    }
 }
