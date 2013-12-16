@@ -30,14 +30,16 @@ public class Unit : Entity {
         get { return m_source; }
     }
 
-    void Awake() {
+    new void Awake() {
+        base.Awake();
         InitBody();
         InitRange();
     }
 
     //Use this for initialization
-    void Start()
+    new void Start()
     {
+        base.Start();
         //This is for testing
             //gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
         ///////////////////////
@@ -155,6 +157,7 @@ public class Unit : Entity {
     public void FinishMission(){
         if(m_reachedDestination){
             State.PlayerMoney += 1; //TODO this needs to be checked
+            m_moneyEffect.StartEffect(1);
             Destroy(gameObject);
         }
     }

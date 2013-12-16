@@ -7,18 +7,13 @@ public class MoneyEffect : MonoBehaviour {
     public Color getColour = Color.green;
     public Color giveColour = Color.red;
 
-
+    private Vector3 m_moneyPosition;
+    
     public IEnumerator Effect(GameObject effect)
     {
-        //Color color = effect.GetComponent<tk2dTextMesh>().color;
         effect.SetActive(true);
         for (int i = 0; i < 30; i++)        {
             effect.transform.position = effect.transform.position + new Vector3(0, .3f, 0);
-            
-            //Color color = effect.GetComponent<tk2dTextMesh>().color;
-            //color.a = color.a - 1/30;
-            //effect.GetComponent<tk2dTextMesh>().color = color;
-            //effect.GetComponent<tk2dTextMesh>().Commit();
 
             yield return 30;
         }
@@ -30,12 +25,20 @@ public class MoneyEffect : MonoBehaviour {
         StartCoroutine(Effect(effect));
     }
 
+    void Awake(){
+        m_moneyPosition = transform.position;
+    }
+
+    public void SetPosition(Vector2 position){
+        m_moneyPosition = new Vector3(position.x, position.y, -2);
+    }
+
     GameObject MakeText(int amount) {
 		string amountString = (amount > 0 ? "+ " : "") + amount;
         
         GameObject ret = new GameObject();		
 		ret.transform.parent = this.transform;
-		ret.transform.localPosition = new Vector3(0, 0, 0);
+		ret.transform.position = m_moneyPosition;
         ret.name = amountString;
 		ret.SetActive(false);
 		

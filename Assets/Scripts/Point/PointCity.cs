@@ -21,7 +21,8 @@ public class PointCity : Point {
 		Reset();
 	}
 	
-	void Start() {
+	new void Start() {
+        base.Start();
 		Reset();
 	}
 	

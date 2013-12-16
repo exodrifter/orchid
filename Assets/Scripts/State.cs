@@ -8,7 +8,7 @@ public class State : MonoBehaviour {
 	private const int ENEMY_GPT = 3;
 	
 	private const int COST_FIGHTER = 4;
-	private const int COST_BOMBER = 1;
+	private const int COST_BOMBER = 8;
 	private const int COST_ICBM = 16;
 
     public const int COST_FIGHTER_UPGRADE = 2;

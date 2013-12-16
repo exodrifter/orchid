@@ -21,6 +21,8 @@ public class UIFab : PointUI {
 	private Queue<GameObject> m_spawnQueue = new Queue<GameObject>();
 	private List<Entity.Type> m_spawnList = new List<Entity.Type>();
 	
+    private MoneyEffect m_moneyEffect;
+
 	private PointFab m_point;
 	
 	void Awake() {
@@ -34,6 +36,11 @@ public class UIFab : PointUI {
 		m_children.Add(m_icbmButton);
 		m_point = GetComponent<PointFab>();
 	}
+
+    void Start(){
+        m_moneyEffect = gameObject.AddComponent<MoneyEffect>();        
+        m_moneyEffect.SetPosition(GameObject.Find("counter-money").transform.position - new Vector3(7, 20, 0));
+    }
 	
 	void Update() {
 		Vector3 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -72,9 +79,15 @@ public class UIFab : PointUI {
 				else {
 					if(IsOpen()) {
 						AudioSource.PlayClipAtPoint(m_cancelSound,transform.position,0.5f);
+                        int diff = State.PlayerMoney;
 						foreach(Entity.Type type in m_spawnList) {
 							State.PlayerMoney += State.GetCostOf(type);
 						}
+                        diff =  State.PlayerMoney - diff;
+                        if(diff > 0){
+                            m_moneyEffect.StartEffect(diff);
+                        }
+
 						m_spawnList.Clear();
 					}
 					SetOpen(false);
