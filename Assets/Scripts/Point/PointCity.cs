@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PointCity : Point {
 	
-	private const float GROWTH_TIME = 10.0f;
+	private const float GROWTH_TIME = 30.0f;
 	
 	private int m_population;
 	private Timer m_timer;
@@ -33,7 +33,7 @@ public class PointCity : Point {
 			while(m_timer.HasElapsed()) {
 				m_population++;
 				m_hp = m_population * 50;
-				m_money = m_population * 2;
+				m_money = m_population * 15;
 				m_timer.SetBack();
 				
 				if(9 < population) {
@@ -45,6 +45,15 @@ public class PointCity : Point {
 				}
 			}
 		}
+        else{
+            if(9 < population) {
+                GetComponent<tk2dSprite>().SetSprite("BigRubble");
+            } else if(4 < population) {
+                GetComponent<tk2dSprite>().SetSprite("MedRubble");
+            } else {
+                GetComponent<tk2dSprite>().SetSprite("SmallRubble");
+            }
+        }
 	}
 	
 	void Reset() {

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class State : MonoBehaviour {
 	
-	private const float GPT_TIME = 5.0f;
+	private const float GPT_TIME = 2.0f;
 	private const int PLAYER_GPT = 2;
 	private const int ENEMY_GPT = 3;
 	

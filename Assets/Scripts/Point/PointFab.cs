@@ -8,4 +8,6 @@ public class PointFab : Point {
 		m_hp = 10;
 		m_money = 10;
 	}
+
+
 }

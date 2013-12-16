@@ -40,14 +40,12 @@ public class Unit : Entity {
     new void Start()
     {
         base.Start();
-        //This is for testing
-            //gameObject.GetComponent<Rigidbody2D>().velocity = (new Vector2(1,0)) * velocity;
-        ///////////////////////
 
-        // Reset the unit's velocity
         if(null != m_source && null != m_destination) {
             SetSourceAndTarget(m_source, m_destination);
         }
+
+        m_money = 1;
 
         m_munition = gameObject.GetComponent<Munition>();
         m_lineRenderer = gameObject.AddComponent<LineRenderer>();
@@ -108,7 +106,7 @@ public class Unit : Entity {
     }
 
     bool CanAttack(Entity target){
-        if(target.m_owner == this.m_owner){
+        if(target.m_owner == this.m_owner || target.dead){
             return false;
         }
 
@@ -156,8 +154,7 @@ public class Unit : Entity {
 
     public void FinishMission(){
         if(m_reachedDestination){
-            State.PlayerMoney += 1; //TODO this needs to be checked
-            m_moneyEffect.StartEffect(1);
+            source.UnitReturned(m_money);
             Destroy(gameObject);
         }
     }

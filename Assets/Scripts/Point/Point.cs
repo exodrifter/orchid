@@ -33,4 +33,9 @@ public abstract class Point : Entity {
         }
     }
 
+    public void UnitReturned(int value){
+        State.PlayerMoney += value; //TODO this needs to be checked
+        m_moneyEffect.StartEffect(value);
+    }
+
 }
