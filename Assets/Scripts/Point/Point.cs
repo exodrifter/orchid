@@ -7,8 +7,6 @@ using System.Collections;
 /// </summary>
 public abstract class Point : Entity {
 	
-	private bool m_rewardGiven;
-	
 	protected new void Start() {
 		base.Start();
 		State.instance.RegisterPointForAI(this);
@@ -16,7 +14,6 @@ public abstract class Point : Entity {
 	
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(gameObject.name + " triggered by " + other.GetType());
         if (other is BoxCollider2D)
         {
             Entity possibleTarget = other.gameObject.GetComponent<Entity>();

@@ -37,9 +37,7 @@ public class MenuUI : MonoBehaviour {
 	
     public IEnumerator LoadLevel()
     {
-        for (int i = 0; i < 30; i++)        {
-            yield return 0;
-        }
+		yield return new WaitForSeconds(0.2f);
         Application.LoadLevel("test");
     }
 

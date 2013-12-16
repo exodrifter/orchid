@@ -84,7 +84,6 @@ public class Unit : Entity {
             while (m_attackTimer.HasElapsed())
             {
                 Attack(m_attackTarget);
-                Debug.Log("Update loop attacking " + m_attackTarget);
                 m_attackTimer.SetBack();
                 m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
             }
@@ -160,13 +159,11 @@ public class Unit : Entity {
     //OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(gameObject.name + " triggered by " + other.GetType());
         if (other is BoxCollider2D)
         {
             Entity possibleTarget = other.gameObject.GetComponent<Entity>();
             if(possibleTarget == null) Debug.LogError("No Entity on other.gameobject:: " + other.gameObject);
             if(CanAttack (possibleTarget)){
-                Debug.Log("Setting attackTarget of type " + possibleTarget.type);
                 m_attackTarget = possibleTarget;
 
                 m_attackTimer.elapsed = m_attackTimer.time;
@@ -177,7 +174,6 @@ public class Unit : Entity {
     //OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log(other.GetType() + " left " + gameObject.name);
         m_attackTarget = null;
     }   
 }

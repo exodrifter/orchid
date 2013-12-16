@@ -13,7 +13,7 @@ public class UIUpgrade : MonoBehaviour {
 
     private bool m_showText;
 
-    private UnitFactory m_unitFactory;
+    public UnitFactory m_unitFactory;
 
     public AudioClip m_buySound;
     public AudioClip m_failSound;
@@ -29,7 +29,6 @@ public class UIUpgrade : MonoBehaviour {
 
         m_showText = false;
 
-        m_unitFactory = GameObject.Find("UnitFactory").GetComponent<UnitFactory>();
         m_lvlTextMesh = m_lvlText.GetComponent<tk2dTextMesh>();
         m_helpTextMesh = m_helpText.GetComponent<tk2dTextMesh>();
 
