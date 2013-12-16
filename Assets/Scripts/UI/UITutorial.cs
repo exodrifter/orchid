@@ -6,6 +6,7 @@ public class UITutorial : MonoBehaviour {
 	public Vector3 m_moveTo;
 	public float m_waitTime = 0f;
 	public float m_showTime = 6f;
+	public bool m_autohide = true;
 	public AudioClip m_sound;
 	
 	void Start() {
@@ -25,7 +26,8 @@ public class UITutorial : MonoBehaviour {
 			source.Play();
 		}
 		
-		StartCoroutine(DelayedKill());
+		if(m_autohide)
+			StartCoroutine(DelayedKill());
 	}
 	
 	IEnumerator DelayedKill() {

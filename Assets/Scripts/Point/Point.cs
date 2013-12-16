@@ -9,7 +9,7 @@ public abstract class Point : Entity {
 	
 	protected new void Start() {
 		base.Start();
-		State.instance.RegisterPointForAI(this);
+		State.instance.RegisterPoint(this);
 	}
 	
     void OnTriggerEnter2D(Collider2D other)
