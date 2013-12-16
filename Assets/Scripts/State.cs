@@ -13,6 +13,7 @@ public class State : MonoBehaviour {
 
     public const int COST_FIGHTER_UPGRADE = 50;
     public const int COST_BOMBER_UPGRADE = 100;
+    public const int COST_ICBM_UPGRADE = 200;
 
     public tk2dFontData defaultFont;
     public static State instance;

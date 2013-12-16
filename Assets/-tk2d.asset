@@ -311,6 +311,7 @@ MonoBehaviour:
     - start-button-default
     - start-button-hover
     - start-button-click
+    - upgrade-icbm
     spriteTextureGUIDs:
     - 05f17609212672b4b8b415000ce46241
     - 237a40fa11b703b4497084db8ee6aaeb
@@ -321,16 +322,18 @@ MonoBehaviour:
     - 46eaa8c4751ba76408a964ceeebdef6f
     - 87d69efe738ce5640870832976df4b43
     - c25fb46e5b80dac4aa2024f615172eab
+    - b0b0d5faa81f8e945a999818d51acfac
     spriteTextureTimeStamps:
-    - 1387125854.1497
-    - 1387125854.1027
-    - 1387198299.77519
-    - 1387198299.77619
-    - 1387198299.77319
-    - 1387198299.77219
-    - 1387199018.13928
-    - 1387200155
-    - 1387200234
+    - 1387124777.13903
+    - 1387124777.13802
+    - 1387196532
+    - 1387196564
+    - 1387196549
+    - 1387196741
+    - 1387204157.21481
+    - 1387204157.19479
+    - 1387204157.19379
+    - 1387151107
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

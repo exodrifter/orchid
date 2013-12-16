@@ -43,10 +43,14 @@ public class UIUpgrade : MonoBehaviour {
         if(m_showText){
             switch (m_index){
                 case 0:
+                    m_lvlTextMesh.text = "Lvl " + m_unitFactory.m_icbmLevel;
+                    m_helpTextMesh.text = "$" + State.COST_ICBM_UPGRADE; 
+                    break;
+                case 1:
                     m_lvlTextMesh.text = "Lvl " + m_unitFactory.m_bomberLevel;
                     m_helpTextMesh.text = "$" + State.COST_BOMBER_UPGRADE; 
                     break;
-                case 1:
+                case 2:
                     m_lvlTextMesh.text = "Lvl " + m_unitFactory.m_fighterLevel;
                     m_helpTextMesh.text = "$" + State.COST_FIGHTER_UPGRADE; 
                     break;
@@ -69,6 +73,18 @@ public class UIUpgrade : MonoBehaviour {
     void OnMouseDown(){
         switch (m_index){
             case 0:
+                if(State.PlayerMoney > State.COST_ICBM_UPGRADE){
+                    m_unitFactory.m_icbmLevel++;
+                    State.PlayerMoney -= State.COST_ICBM_UPGRADE;
+                    AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
+
+                    m_moneyEffect.StartEffect(-State.COST_ICBM_UPGRADE);
+                }
+                else{
+                    AudioSource.PlayClipAtPoint(m_failSound,transform.position,0.7f);
+                }
+                break;
+            case 1:
                 if(State.PlayerMoney > State.COST_BOMBER_UPGRADE){
                     m_unitFactory.m_bomberLevel++;
                     State.PlayerMoney -= State.COST_BOMBER_UPGRADE;
@@ -80,7 +96,7 @@ public class UIUpgrade : MonoBehaviour {
                     AudioSource.PlayClipAtPoint(m_failSound,transform.position,0.7f);
                 }
                 break;
-            case 1:
+            case 2:
                 if(State.PlayerMoney > State.COST_FIGHTER_UPGRADE){
                     m_unitFactory.m_fighterLevel++;
                     State.PlayerMoney -= State.COST_FIGHTER_UPGRADE;
