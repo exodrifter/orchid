@@ -11,16 +11,31 @@ public class UnitQueuUI : MonoBehaviour {
     private Transform m_parent;
     private Vector2 m_offset;
 
-    private List<GameObject> m_spawnList = new List<GameObject>();
+    private List<GameObject> m_spawnList;
     
     void Awake(){
+        SetPosition();
         m_parent = transform;
-        m_titleText = MakeText("title-text", "Unit Queue", new Vector3(0, 10.0f, 0));
+        m_titleText = MakeText("title-text", "Unit Queue", new Vector3(20, 8, 0));
+        m_spawnList = new List<GameObject>();
+        m_offset = new Vector3(0, 0, 0);
     }
+
+    void SetPosition() {
+		Vector3 pos = Camera.main.ScreenToWorldPoint(new Vector3(20, 20, 0));
+		transform.position = pos;
+		
+		// Reset the local z position value
+		pos = transform.localPosition;
+		pos.z = 0;
+		transform.localPosition = pos;
+	}
 
     public void AddUnit(Entity.Type type){
         GameObject unit = Instantiate(unitPrefab) as GameObject;
-        
+        unit.transform.parent = transform;
+        unit.transform.localPosition = m_offset;
+
 
         switch (type)
         {
@@ -36,16 +51,20 @@ public class UnitQueuUI : MonoBehaviour {
             default:
                 break;
         }
+        m_offset.x += unit.GetComponent<tk2dSprite>().GetBounds().size.x + 3;
+
         unit.SetActive(false);
         m_spawnList.Add(unit);
     }
 
     void Update(){
         if(m_spawnList.Count > 0){
+            m_titleText.SetActive(true);
             foreach (GameObject unit in m_spawnList){
                 unit.SetActive(true);
             }
         } else{
+            m_titleText.SetActive(false);
             foreach (GameObject unit in m_spawnList){
                 unit.SetActive(false);
             }
@@ -53,7 +72,11 @@ public class UnitQueuUI : MonoBehaviour {
     }
 
     public void Clear(){
+        foreach (GameObject unit in m_spawnList){
+            Destroy(unit);
+        }
         m_spawnList.Clear();
+        m_offset = new Vector3(0, 0, 0);
     }
 
     public void SetParent(Transform parent){
@@ -67,9 +90,9 @@ public class UnitQueuUI : MonoBehaviour {
     private GameObject MakeText(string name, string text, Vector3 offset) {        
         GameObject ret = new GameObject();		
 		ret.transform.parent = m_parent;
-		ret.transform.localPosition = m_offset;
+		ret.transform.localPosition = offset;
         ret.name = name;
-		ret.SetActive(false);
+		
 		
 		tk2dTextMesh mesh = ret.AddComponent<tk2dTextMesh>();
 		mesh.font = m_font;

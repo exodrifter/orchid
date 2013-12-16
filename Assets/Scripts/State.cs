@@ -113,7 +113,6 @@ public class State : MonoBehaviour {
 	}
 	
 	public void RegisterPointForAI(Point p) {
-		Debug.Log(p);
 		if(p is PointCity) {
 			if(p.m_owner == Owner.PLAYER) {
 				m_playerCities.Add(p as PointCity);

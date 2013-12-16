@@ -24,6 +24,8 @@ public class UIFab : PointUI {
     private MoneyEffect m_moneyEffect;
 
 	private PointFab m_point;
+
+    private UnitQueuUI m_unitQueueUI;
 	
 	void Awake() {
 		int m_xMargin = 15;
@@ -41,6 +43,8 @@ public class UIFab : PointUI {
         m_moneyEffect = gameObject.AddComponent<MoneyEffect>();        
         m_moneyEffect.SetParent(GameObject.Find("counter-money").transform);
         m_moneyEffect.SetOffset(new Vector2(-7, -20));
+
+        m_unitQueueUI = GameObject.Find("unit-queue").GetComponent<UnitQueuUI>();
     }
 	
 	void Update() {
@@ -53,6 +57,7 @@ public class UIFab : PointUI {
 				} else {
 					AudioSource.PlayClipAtPoint(m_cancelSound,transform.position,0.5f);
 					m_spawnList.Clear();
+                    m_unitQueueUI.Clear();
 				}
 				SetOpen(!IsOpen());
 			}
@@ -94,10 +99,12 @@ public class UIFab : PointUI {
                         }
 
 						m_spawnList.Clear();
+                        m_unitQueueUI.Clear();
 					}
 					SetOpen(false);
 				}
 				m_spawnList.Clear();
+                //m_unitQueueUI.Clear();
 			}
 		}
 	}
@@ -132,6 +139,7 @@ public class UIFab : PointUI {
 	public void AddToSpawnList(Entity.Type type) {
 		if(IsOpen()) {
 			m_spawnList.Add(type);
+            m_unitQueueUI.AddUnit(type);
 		}
 	}
 	
