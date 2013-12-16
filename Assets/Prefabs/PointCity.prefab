@@ -82,10 +82,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c3c33d8b5189b4488f5f1585219b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
   m_type: 3
-  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
-  m_canRespawn: 0
   m_startActive: 0
 --- !u!114 &11400002
 MonoBehaviour:

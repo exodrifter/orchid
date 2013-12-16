@@ -9,16 +9,9 @@ public abstract class Point : Entity {
 	
 	private bool m_rewardGiven;
 	
-	protected new void Awake() {
-		base.Awake();
-	}
-	
-	protected void Start() {
+	protected new void Start() {
+		base.Start();
 		State.instance.RegisterPointForAI(this);
-	}
-
-	protected void Update() {
-		
 	}
 	
     void OnTriggerEnter2D(Collider2D other)

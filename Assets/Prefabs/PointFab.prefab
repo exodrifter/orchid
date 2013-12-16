@@ -122,10 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c095894fa2917b2488cc3fd92ff04f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
   m_type: 3
-  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
-  m_canRespawn: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

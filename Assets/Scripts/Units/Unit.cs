@@ -30,8 +30,7 @@ public class Unit : Entity {
         get { return m_source; }
     }
 
-    new void Awake() {
-        base.Awake();
+    void Awake() {
         InitBody();
         InitRange();
     }
@@ -144,7 +143,6 @@ public class Unit : Entity {
 
     public new void TakeDamage(int damage){
         base.TakeDamage(damage);
-        Destroy(gameObject);
     }
 
     public void ReachedDestination(){

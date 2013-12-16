@@ -3,8 +3,9 @@ using System.Collections;
 
 public class Entity : MonoBehaviour {
     public enum Type {bomber, fighter, icbm, point};
-
+	
     public AudioClip m_destructionSound;
+    public ExplosionGroup m_explosion;
 
 	/// <summary>
 	/// The owner of this point
@@ -26,7 +27,7 @@ public class Entity : MonoBehaviour {
 	/// </summary>
 	protected int m_money;
 
-
+	private bool m_rewardGiven = false;
 
     /// <summary>
 	/// The type of the entity
@@ -70,30 +71,34 @@ public class Entity : MonoBehaviour {
         gameObject.renderer.enabled = true;
     }
 
-    protected void Awake(){
-    }
-
     protected void Start(){
         m_moneyEffect = gameObject.AddComponent<MoneyEffect>();
     }
 
     public void TakeDamage(int damage)
     {
-        if(!dead){
-            StartCoroutine(HitEffect());
-            m_damage += damage;
-
-            if(dead){
-                 AudioSource.PlayClipAtPoint(m_destructionSound,this.transform.position,0.6f);
-                 if(m_owner == Owner.PLAYER) {
-                    State.EnemyMoney += m_money;
-                 } else {
-                    State.PlayerMoney += m_money;
-                    m_moneyEffect.StartEffect(m_money);
-                 }
-          
-                // TODO: Explosion gameobject spawning
-            }
-        }
-    }
+		// Deal damage
+		if(!dead) {
+			StartCoroutine(HitEffect());
+			m_damage += damage;
+		}
+		// If the entity is now dead, play death stuff and reward correct player
+		if(dead && !m_rewardGiven) {
+			m_rewardGiven = true;
+			
+			AudioSource.PlayClipAtPoint(m_destructionSound, this.transform.position,0.6f);
+			if(m_owner == Owner.PLAYER) {
+				State.EnemyMoney += m_money;
+			} else {
+				State.PlayerMoney += m_money;
+				m_moneyEffect.StartEffect(m_money);
+			}
+			
+			// Explosion!
+			if(Type.point == m_type) {
+				GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
+				go.transform.position = this.transform.position;
+			}
+		}
+	}
 }
