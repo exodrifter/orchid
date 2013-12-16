@@ -96,9 +96,10 @@ public class Entity : MonoBehaviour {
 			}
 			
 			// Explosion!
-			if(Type.point == m_type) {
-				GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
-				go.transform.position = this.transform.position;
+			GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
+			go.transform.position = this.transform.position + new Vector3(0,0,-1);
+			if(Type.point != m_type) {
+				go.GetComponent<ExplosionGroup>().m_range*=.3f;
 			}
 		}
 	}

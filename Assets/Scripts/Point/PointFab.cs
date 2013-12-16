@@ -9,4 +9,10 @@ public class PointFab : Point {
 		
 		GetComponent<tk2dSprite>().color = m_owner == Owner.PLAYER ? Color.blue : Color.red;
 	}
+	
+	void Update() {
+		if(dead) {
+			GetComponent<tk2dSprite>().SetSprite("MedCrater");
+		}
+	}
 }

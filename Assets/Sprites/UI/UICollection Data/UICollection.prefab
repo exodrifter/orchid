@@ -73,12 +73,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: upgrade-bomb
     boundsData:
@@ -111,12 +114,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: info-enemy
     boundsData:
@@ -149,12 +155,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: info-fabs
     boundsData:
@@ -187,12 +196,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: info-cities
     boundsData:
@@ -225,12 +237,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: info-attack
     boundsData:
@@ -263,12 +278,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: start-button-default
     boundsData:
@@ -301,12 +319,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: start-button-hover
     boundsData:
@@ -339,12 +360,15 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   - name: start-button-click
     boundsData:
@@ -377,12 +401,56 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
+    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: upgrade-icbm
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 20, y: 40, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 20, y: 40, z: 0}
+    texelSize: {x: .666666687, y: .666666687}
+    positions:
+    - {x: -10, y: -20, z: 0}
+    - {x: 10, y: -20, z: 0}
+    - {x: -10, y: 20, z: 0}
+    - {x: 10, y: 20, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .488285154, y: .488283217}
+    - {x: .488285154, y: .546873033}
+    - {x: .722652316, y: .488283217}
+    - {x: .722652316, y: .546873033}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b6dee845971ae3948ab6375dd925f25c, type: 2}
+    materialId: 0
+    sourceTextureGUID: b0b0d5faa81f8e945a999818d51acfac
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
     attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
@@ -390,6 +458,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b6dee845971ae3948ab6375dd925f25c, type: 2}
   textures:
   - {fileID: 2800000, guid: 692051272b3950a41a5b20d690e0fb1d, type: 3}
+  pngTextures: []
+  textureFilterMode: 0
+  textureMipMaps: 0
   allowMultipleAtlases: 0
   spriteCollectionGUID: 21596096d5950484a90359e4c9e73b71
   spriteCollectionName: UICollection
@@ -397,7 +468,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: .75
-  buildKey: 2019611879
+  buildKey: 27995979
   dataGuid: acb375c8957a4484e8b73c87d32eaebf
   managedSpriteCollection: 0
   hasPlatformData: 0
