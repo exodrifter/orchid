@@ -10,6 +10,10 @@ public class State : MonoBehaviour {
 	private const int COST_FIGHTER = 4;
 	private const int COST_BOMBER = 8;
 	private const int COST_ICBM = 16;
+
+    public const int COST_FIGHTER_UPGRADE = 50;
+    public const int COST_BOMBER_UPGRADE = 100;
+
 	
 	private static Timer m_gptTimer;
 	
