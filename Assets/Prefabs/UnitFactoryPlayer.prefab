@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: UnitFactory
+  m_Name: UnitFactoryPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,6 +40,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_fighterLevel: 0
   m_bomberLevel: 0
+  owner: 0
   fighterSmall: {fileID: 100000, guid: 18340a2f5e19dfd478726b1342e85012, type: 2}
   fighterMedium: {fileID: 100000, guid: 17dea11666d37304ead09e712aec97d6, type: 2}
   fighterBig: {fileID: 100000, guid: 11689430ac467234e811c45d14850145, type: 2}
