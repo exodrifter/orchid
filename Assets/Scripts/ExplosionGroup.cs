@@ -39,9 +39,9 @@ public class ExplosionGroup : MonoBehaviour {
 			GameObject go = Instantiate(m_explosions[Random.Range(0,m_explosions.Count-1)]) as GameObject;
 			go.transform.parent = this.transform;
 			Vector3 pos = this.transform.position;
-			pos.x = go.transform.position.x + Random.Range(-m_range.x, m_range.x);
-			pos.y = go.transform.position.y + Random.Range(-m_range.y, m_range.y);
-			pos.z = go.transform.position.z;
+			pos.x = pos.x + Random.Range(-m_range.x, m_range.x);
+			pos.y = pos.y + Random.Range(-m_range.y, m_range.y);
+			pos.z = pos.z;
 			go.transform.position = pos;
 		}
 	}
