@@ -71,7 +71,9 @@ public class UIUpgrade : MonoBehaviour {
             case 0:
                 if(State.PlayerMoney > State.COST_BOMBER_UPGRADE){
                     m_unitFactory.m_bomberLevel++;
+                    
                     State.PlayerMoney -= State.COST_BOMBER_UPGRADE;
+                    if(State.PlayerMoney < 0) Debug.LogWarning("adjusment :: " + -State.COST_BOMBER_UPGRADE); 
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
 
                     m_moneyEffect.StartEffect(-State.COST_BOMBER_UPGRADE);
@@ -84,6 +86,7 @@ public class UIUpgrade : MonoBehaviour {
                 if(State.PlayerMoney > State.COST_FIGHTER_UPGRADE){
                     m_unitFactory.m_fighterLevel++;
                     State.PlayerMoney -= State.COST_FIGHTER_UPGRADE;
+                    if(State.PlayerMoney < 0) Debug.LogWarning("adjusment :: " +  -State.COST_FIGHTER_UPGRADE); 
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
 
                     m_moneyEffect.StartEffect(-State.COST_FIGHTER_UPGRADE);

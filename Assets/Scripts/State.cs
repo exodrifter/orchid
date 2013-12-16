@@ -28,8 +28,8 @@ public class State : MonoBehaviour {
 	
 	private static int m_enemyMoney = 20;
 	public static int EnemyMoney {
-		get { return m_playerMoney; }
-		set { m_playerMoney = value; }
+		get { return m_enemyMoney; }
+		set { m_enemyMoney = value; }
 	}
 	
 	void Awake() {
@@ -58,7 +58,9 @@ public class State : MonoBehaviour {
 		m_gptTimer.elapsed += Time.deltaTime;
 		while(m_gptTimer.HasElapsed()) {
 			State.m_playerMoney += PLAYER_GPT;
+            Debug.LogWarning("Adding to player money with GPT of " + PLAYER_GPT + " = " + m_playerMoney);
             m_moneyEffect.StartEffect(PLAYER_GPT);
+            Debug.LogWarning("DOUBLE CHECK " + PLAYER_GPT + " = " + m_playerMoney);
 
 			State.m_enemyMoney += ENEMY_GPT;
 			m_gptTimer.SetBack();
@@ -74,7 +76,8 @@ public class State : MonoBehaviour {
 		case Entity.Type.icbm:
 			return COST_ICBM;
 		default:
-			return -1;
+            Debug.LogError("Entity type " + type + " does not have a cost.");
+			return 0;
 		}
 	}
 	

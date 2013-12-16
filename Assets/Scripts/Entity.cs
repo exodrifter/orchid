@@ -89,8 +89,9 @@ public class Entity : MonoBehaviour {
 			AudioSource.PlayClipAtPoint(m_destructionSound, this.transform.position,0.6f);
 			if(m_owner == Owner.PLAYER) {
 				State.EnemyMoney += m_money;
-			} else {
+            } else {
 				State.PlayerMoney += m_money;
+                if(State.PlayerMoney < 0) Debug.LogWarning("adjusment :: " + m_money); 
 				m_moneyEffect.StartEffect(m_money);
 			}
 			

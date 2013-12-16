@@ -15,6 +15,7 @@ public class UIMoney : MonoBehaviour {
 	}
 	
 	void Update() {
+        Debug.LogWarning("Counter see player money as " +  State.PlayerMoney);
 		m_mesh.text = "$" + State.PlayerMoney;
 		m_mesh.Commit();
 	}

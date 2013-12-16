@@ -28,6 +28,7 @@ public class UIUnit : MonoBehaviour {
 	void OnMouseDown() {
 		if(State.PlayerMoney >= State.GetCostOf(m_type)) {
 			State.PlayerMoney -= State.GetCostOf(m_type);
+            if(State.PlayerMoney < 0) Debug.LogWarning("adjusment :: " +  -State.GetCostOf(type)); 
 			m_fab.AddToSpawnList(m_type);
 			AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
             m_moneyEffect.StartEffect(-State.GetCostOf(m_type));
