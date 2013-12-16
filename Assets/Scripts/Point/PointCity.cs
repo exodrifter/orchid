@@ -64,6 +64,7 @@ public class PointCity : Point {
 	
 	void Reset() {
 		GetComponent<tk2dSprite>().SetSprite("SmallCity");
+		GetComponent<tk2dSprite>().color = m_owner == Owner.PLAYER ? Color.white : new Color(1,.3f,.3f);
 		m_hp = 50;
 		m_money = 2;
 		m_population = 1;

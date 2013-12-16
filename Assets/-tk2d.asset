@@ -304,12 +304,24 @@ MonoBehaviour:
     spriteNames:
     - upgrade-fight
     - upgrade-bomb
+    - info-enemy
+    - info-fabs
+    - info-cities
+    - info-attack
     spriteTextureGUIDs:
     - 05f17609212672b4b8b415000ce46241
     - 237a40fa11b703b4497084db8ee6aaeb
+    - 0029021f385deca49a6460f100af8420
+    - 86ec36ca4579a79439bd5fe1529204ba
+    - c61d9992d7f5cab44b5c1960f35a925f
+    - d831dcafb7cf56a4e81bfd2d8d940005
     spriteTextureTimeStamps:
     - 1387124777.13903
     - 1387124777.13802
+    - 1387196532
+    - 1387196564
+    - 1387196549
+    - 1387196741
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
