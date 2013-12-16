@@ -34,7 +34,7 @@ public class PointCity : Point {
 				    State.PLAYER_GPT++;
                 }
                 else if(m_owner == Owner.ENEMY){
-                     State.PLAYER_GPT++;
+                     State.ENEMY_GPT++;
                 }
                 m_hp = m_population * 50;
 				m_money = m_population * 15;

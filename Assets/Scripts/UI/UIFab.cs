@@ -93,6 +93,7 @@ public class UIFab : PointUI {
                         int diff = State.PlayerMoney;
 						foreach(Entity.Type type in m_spawnList) {
 							State.PlayerMoney += State.GetCostOf(type);
+                            if(State.PlayerMoney < 0) Debug.LogWarning("adjusment :: " +  State.GetCostOf(type)); 
 						}
                         diff =  State.PlayerMoney - diff;
                         if(diff > 0){
