@@ -19,7 +19,7 @@ public class UnitQueuUI : MonoBehaviour {
     }
 
     public void AddUnit(Entity.Type type){
-        GameObject unit = Instantiate(prefab) as GameObject;
+        GameObject unit = Instantiate(unitPrefab) as GameObject;
         
 
         switch (type)
