@@ -80,6 +80,7 @@ public class UIFab : PointUI {
 					StopAllCoroutines();
 					if(m_spawnList.Count > 0) {
 						m_spawnList.Clear();
+                        m_unitQueueUI.Clear();
 						AudioSource.PlayClipAtPoint(m_launchSound,transform.position,0.5f);
 					}
 					StartCoroutine(SpawnUnits());
@@ -103,8 +104,6 @@ public class UIFab : PointUI {
 					}
 					SetOpen(false);
 				}
-				m_spawnList.Clear();
-                //m_unitQueueUI.Clear();
 			}
 		}
 	}
