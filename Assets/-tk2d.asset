@@ -165,6 +165,15 @@ MonoBehaviour:
     - BigFighter
     - MedBomber
     - SmallFighter
+    - SmallFighterEnemy
+    - BigFighterEnemy
+    - SmallBomberEnemy
+    - MedBomberEnemy
+    - BigBomberEnemy
+    - MedFighterEnemy
+    - MedIcbm
+    - SmallIcbm
+    - BigIcbm
     spriteTextureGUIDs:
     - 89ef4ed8c14ed964691b82ffc27c5d37
     - 0aa1290c5cf386b409b9b039dde6ef7d
@@ -179,6 +188,15 @@ MonoBehaviour:
     - a01eaa312cbc77140873d56cece071c7
     - b635685ef277fa9409b15d96fb7918f7
     - e7b2afc90d6925b4786ad85eb7e2a102
+    - dab19ac4781cab843ba33ac72fc3a880
+    - b521bb7948e4b68419369dcebd2a2ce3
+    - 49ff907c4f43f8547ba5706928cd2d4d
+    - 0df8117c0e3418344b9fe9e3e6ec5326
+    - 03ffa38f10078de478572d416bc2e808
+    - aa5450effff548e4d80104a7e44ae663
+    - bc9ef355aaf64ba44874065099b664d6
+    - 2f4288798e9c07d45811ff8246f7fec3
+    - 67afe83abdadfc04fb29aa6a0c9b8991
     spriteTextureTimeStamps:
     - 1387049390.30934
     - 1387057727
@@ -193,6 +211,15 @@ MonoBehaviour:
     - 1387140617
     - 1387140475
     - 1387140548
+    - 1387140285
+    - 1387140352
+    - 1387140379
+    - 1387140403
+    - 1387140428
+    - 1387140331
+    - 1387194969.05768
+    - 1387194975.36204
+    - 1387194962.82433
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
