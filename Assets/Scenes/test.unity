@@ -14125,7 +14125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
-  m_collection: {fileID: 0}
+  unitPrefab: {fileID: 100000, guid: 1c1e9b36b867de14ca11ed121a95f116, type: 2}
 --- !u!1 &1627794694
 GameObject:
   m_ObjectHideFlags: 0
