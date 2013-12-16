@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: UnitFactoryPlayer
+  m_Name: GroupExplosion-ICBM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35,22 +35,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53441fa66a42e9a4da73dc06ba9f69a3, type: 3}
+  m_Script: {fileID: 11500000, guid: aeebd9a10a9328e4ab1c930976eb98a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fighterLevel: 0
-  m_bomberLevel: 0
-  m_icbmLevel: 0
-  owner: 0
-  fighterSmall: {fileID: 100000, guid: 18340a2f5e19dfd478726b1342e85012, type: 2}
-  fighterMedium: {fileID: 100000, guid: 17dea11666d37304ead09e712aec97d6, type: 2}
-  fighterBig: {fileID: 100000, guid: 11689430ac467234e811c45d14850145, type: 2}
-  bomberSmall: {fileID: 100000, guid: 483b81e5d27c5124eba9aa9a551e9612, type: 2}
-  bomberMedium: {fileID: 100000, guid: e3c369181bf488a44a6bff7d04c063a0, type: 2}
-  bomberBig: {fileID: 100000, guid: 30c07ad993947bc4199f0fca515d1a66, type: 2}
-  icbmSmall: {fileID: 100000, guid: f683fd22c6fc20b41898be591340c5ac, type: 2}
-  icbmMedium: {fileID: 100000, guid: e63945d712adebc4696e328c16113176, type: 2}
-  icbmBig: {fileID: 100000, guid: c3070fe7c4e277d4f8bf447aede7f7ce, type: 2}
+  EXPLOSION_TIME: 2
+  EXPLOSION_FREQ: .100000001
+  EXPLOSION_FREQ_VARIANCE: .100000001
+  m_explosions:
+  - {fileID: 100000, guid: 2eba82931b3a90743abfc334a94243a3, type: 2}
+  - {fileID: 100000, guid: 7abc1d9fd35960d418769db122b9ec48, type: 2}
+  m_range: {x: 20, y: 20}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

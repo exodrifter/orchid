@@ -17,6 +17,10 @@ public class UnitFactory : MonoBehaviour {
 	public GameObject bomberMedium;
 	public GameObject bomberBig;
 	
+	public GameObject icbmSmall;
+	public GameObject icbmMedium;
+	public GameObject icbmBig;
+	
 	public GameObject SpawnUnit(Entity.Type type) {
 		GameObject prefab = null;
 		switch(type) {
@@ -36,6 +40,15 @@ public class UnitFactory : MonoBehaviour {
 				prefab = bomberMedium;
 			} else {
 				prefab = bomberBig;
+			}
+			break;
+		case Entity.Type.icbm:
+			if(m_icbmLevel < 1) {
+				prefab = icbmSmall;
+			} else if(m_icbmLevel < 2) {
+				prefab = icbmMedium;
+			} else {
+				prefab = icbmBig;
 			}
 			break;
 		}
