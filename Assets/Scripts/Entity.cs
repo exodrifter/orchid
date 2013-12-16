@@ -91,16 +91,19 @@ public class Entity : MonoBehaviour {
 				State.EnemyMoney += m_money;
             } else {
 				State.PlayerMoney += m_money;
-                if(State.PlayerMoney < 0) Debug.LogWarning("adjusment :: " + m_money); 
 				m_moneyEffect.StartEffect(m_money);
 			}
 			
 			// Explosion!
-			GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
-			go.transform.position = this.transform.position + new Vector3(0,0,-1);
-			if(Type.point != m_type) {
-				go.GetComponent<ExplosionGroup>().m_range*=.3f;
-			}
+			Explode();
 		}
 	}
+
+    public void Explode(){
+    	GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
+		go.transform.position = this.transform.position + new Vector3(0,0,-1);
+		if(Type.point != m_type) {
+			go.GetComponent<ExplosionGroup>().m_range*=.3f;
+		}
+    }
 }

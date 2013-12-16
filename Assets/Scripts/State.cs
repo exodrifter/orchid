@@ -59,9 +59,7 @@ public class State : MonoBehaviour {
 		m_gptTimer.elapsed += Time.deltaTime;
 		while(m_gptTimer.HasElapsed()) {
 			State.m_playerMoney += PLAYER_GPT;
-            Debug.LogWarning("Adding to player money with GPT of " + PLAYER_GPT + " = " + m_playerMoney);
             m_moneyEffect.StartEffect(PLAYER_GPT);
-            Debug.LogWarning("DOUBLE CHECK " + PLAYER_GPT + " = " + m_playerMoney);
 
 			State.m_enemyMoney += ENEMY_GPT;
 			m_gptTimer.SetBack();

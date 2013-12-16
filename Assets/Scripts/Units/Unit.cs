@@ -118,7 +118,7 @@ public class Unit : Entity {
             case Type.fighter:
                 return true;
             case Type.icbm:
-                return target.type == Type.point;
+                return target.gameObject.name == destination.gameObject.name;
             case Type.point:
                 return false;
             default:
@@ -141,6 +141,9 @@ public class Unit : Entity {
         if (hitChance <= m_munition.accuracy) {
             target.TakeDamage(damage);
         }
+        if(type == Type.icbm){
+            ReachedDestination();
+        }
     }
 
     public new void TakeDamage(int damage){
@@ -148,11 +151,18 @@ public class Unit : Entity {
     }
 
     public void ReachedDestination(){
-        gameObject.GetComponent<Rigidbody2D>().velocity *= -1;
-        transform.LookAt(source.gameObject.transform, transform.up);
-        transform.Rotate(0 , -90, 0);
-        transform.position = transform.position + new Vector3(0 , 0, -2);
-        m_reachedDestination = true;
+        if(type == Type.icbm){
+            Explode();
+            gameObject.renderer.enabled = false;
+            Destroy(gameObject, 3);            
+        }
+        else{
+            gameObject.GetComponent<Rigidbody2D>().velocity *= -1;
+            transform.LookAt(source.gameObject.transform, transform.up);
+            transform.Rotate(0 , -90, 0);
+            transform.position = transform.position + new Vector3(0 , 0, -2);
+            m_reachedDestination = true;
+        }
     }
 
     public void FinishMission(){
@@ -169,10 +179,12 @@ public class Unit : Entity {
         {
             Entity possibleTarget = other.gameObject.GetComponent<Entity>();
             if(possibleTarget == null) Debug.LogError("No Entity on other.gameobject:: " + other.gameObject);
-            if(CanAttack (possibleTarget)){
+            else{
+                if(CanAttack (possibleTarget)){
                 m_attackTarget = possibleTarget;
 
                 m_attackTimer.elapsed = m_attackTimer.time;
+                }
             }
         }
     }
