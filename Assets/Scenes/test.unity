@@ -1862,12 +1862,12 @@ MonoBehaviour:
   m_fighterLevel: 0
   m_bomberLevel: 0
   owner: 1
-  fighterSmall: {fileID: 100000, guid: 18340a2f5e19dfd478726b1342e85012, type: 2}
-  fighterMedium: {fileID: 100000, guid: 17dea11666d37304ead09e712aec97d6, type: 2}
-  fighterBig: {fileID: 100000, guid: 11689430ac467234e811c45d14850145, type: 2}
-  bomberSmall: {fileID: 100000, guid: 483b81e5d27c5124eba9aa9a551e9612, type: 2}
-  bomberMedium: {fileID: 100000, guid: e3c369181bf488a44a6bff7d04c063a0, type: 2}
-  bomberBig: {fileID: 100000, guid: 30c07ad993947bc4199f0fca515d1a66, type: 2}
+  fighterSmall: {fileID: 100000, guid: a72e16b133618164692b8b98df768ff1, type: 2}
+  fighterMedium: {fileID: 100000, guid: c2d32eb1eaae5ea43901541eebda31cc, type: 2}
+  fighterBig: {fileID: 100000, guid: ef4db909213d42c408c457f6588b4601, type: 2}
+  bomberSmall: {fileID: 100000, guid: 04f9fa514315de649abda5291f5add66, type: 2}
+  bomberMedium: {fileID: 100000, guid: 68422856b875fc44dbbbac73f7371816, type: 2}
+  bomberBig: {fileID: 100000, guid: c67f7b2561438a3498b6f4037eb6140a, type: 2}
 --- !u!4 &235944811
 Transform:
   m_ObjectHideFlags: 0

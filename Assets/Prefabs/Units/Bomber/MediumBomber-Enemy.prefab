@@ -73,7 +73,7 @@ MonoBehaviour:
   m_destructionSound: {fileID: 0}
   m_owner: 1
   m_type: 0
-  m_shootSound: {fileID: 0}
+  m_shootSound: {fileID: 8300000, guid: 86d68cf77f4c18a4fb653d1a88470769, type: 3}
   velocity: 100
   range: 10
 --- !u!114 &11400002
@@ -107,6 +107,9 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
+  boxCollider2D: {fileID: 0}
+  polygonCollider2D: []
+  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
