@@ -10,7 +10,7 @@ public class PointWonder : Point {
 	
 	void Update() {
 		if(dead) {
-			GetComponent<tk2dSprite>().SetSprite("MedCrater");
+			GetComponent<tk2dSprite>().SetSprite("BigCrater");
 		}
 	}
 }
