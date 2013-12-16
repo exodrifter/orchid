@@ -91,10 +91,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colour: {r: 1, g: 0, b: 0, a: 1}
-  damage: 2
+  damage: 3
   attack_time: .00999999978
-  attack_time_variance: .100000001
-  accuracy: .800000012
+  attack_time_variance: 0
+  accuracy: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,11 +107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_destructionSound: {fileID: 0}
+  m_explosion: {fileID: 0}
   m_owner: 1
   m_type: 0
   m_shootSound: {fileID: 8300000, guid: 86d68cf77f4c18a4fb653d1a88470769, type: 3}
-  velocity: 100
-  range: 10
+  velocity: 70
+  range: 15
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
