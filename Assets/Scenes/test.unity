@@ -120,9 +120,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 1
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -400,9 +397,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -822,9 +816,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1068,9 +1059,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1195,9 +1183,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1415,9 +1400,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1687,9 +1669,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1862,9 +1841,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1989,9 +1965,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2105,9 +2078,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2480,9 +2450,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2779,9 +2746,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2906,9 +2870,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3033,9 +2994,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3268,9 +3226,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3447,9 +3402,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3611,9 +3563,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3724,9 +3673,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3822,9 +3768,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3974,9 +3917,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4138,9 +4078,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4250,9 +4187,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4478,9 +4412,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4605,9 +4536,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4732,9 +4660,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4859,9 +4784,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4971,9 +4893,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5288,9 +5207,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5415,9 +5331,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5542,9 +5455,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5669,9 +5579,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5829,9 +5736,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6060,9 +5964,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6173,9 +6074,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6354,6 +6252,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2015363810}
   - {fileID: 1625348873}
   - {fileID: 23161299}
   - {fileID: 910728}
@@ -6448,9 +6347,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6679,9 +6575,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6806,9 +6699,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6933,9 +6823,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7112,9 +6999,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7399,9 +7283,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7526,9 +7407,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7653,9 +7531,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7832,9 +7707,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7959,9 +7831,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8086,9 +7955,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8354,9 +8220,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8585,9 +8448,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8908,9 +8768,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9119,9 +8976,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9232,9 +9086,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 18
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9437,7 +9288,6 @@ MonoBehaviour:
     orthographicPixelsPerMeter: 3
     orthographicOrigin: 1
     orthographicType: 0
-    transparencySortMode: 0
     fieldOfView: 60
     rect:
       serializedVersion: 2
@@ -9568,9 +9418,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9867,9 +9714,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10033,9 +9877,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 9
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10226,9 +10067,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10297,9 +10135,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10418,9 +10253,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10545,9 +10377,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10710,9 +10539,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10913,9 +10739,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11211,9 +11034,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11386,9 +11206,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11513,9 +11330,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11800,9 +11614,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11927,9 +11738,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12158,9 +11966,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12271,9 +12076,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 8
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12562,9 +12364,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12745,9 +12544,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12872,9 +12668,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13193,9 +12986,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13320,9 +13110,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13485,9 +13272,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13715,9 +13499,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13831,9 +13612,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13973,9 +13751,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14100,9 +13875,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14227,9 +13999,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14402,9 +14171,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14585,9 +14351,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14888,9 +14651,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15119,9 +14879,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15358,9 +15115,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15589,9 +15343,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15716,9 +15467,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15914,9 +15662,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16097,9 +15842,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16332,9 +16074,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16511,9 +16250,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16638,9 +16374,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16765,9 +16498,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16944,9 +16674,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17071,9 +16798,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17198,9 +16922,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17353,9 +17074,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17480,9 +17198,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17636,9 +17351,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17774,9 +17486,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17901,9 +17610,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18088,9 +17794,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18383,9 +18086,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18546,9 +18246,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18764,9 +18461,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19055,9 +18749,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19242,9 +18933,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19280,6 +18968,83 @@ MeshFilter:
   m_PrefabInternal: {fileID: 698664657}
   m_GameObject: {fileID: 2012806770}
   m_Mesh: {fileID: 0}
+--- !u!1 &2015363809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2015363810}
+  - 23: {fileID: 2015363813}
+  - 33: {fileID: 2015363812}
+  - 114: {fileID: 2015363811}
+  m_Layer: 0
+  m_Name: menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2015363810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015363809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -124, y: -81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 633641885}
+--- !u!114 &2015363811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015363809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collection: {fileID: 11400000, guid: acb375c8957a4484e8b73c87d32eaebf, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 2
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  renderLayer: 0
+--- !u!33 &2015363812
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015363809}
+  m_Mesh: {fileID: 0}
+--- !u!23 &2015363813
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015363809}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: b6dee845971ae3948ab6375dd925f25c, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
 --- !u!1 &2016294737
 GameObject:
   m_ObjectHideFlags: 0
@@ -19355,9 +19120,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19702,9 +19464,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 13
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19947,9 +19706,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20074,9 +19830,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20310,9 +20063,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20586,9 +20336,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
