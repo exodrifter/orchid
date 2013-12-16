@@ -82,6 +82,7 @@ public class UIFab : PointUI {
 						m_spawnList.Clear();
                         m_unitQueueUI.Clear();
 						AudioSource.PlayClipAtPoint(m_launchSound,transform.position,0.5f);
+						AI.m_userStarted = true;
 					}
 					StartCoroutine(SpawnUnits());
 					SetOpen(false);
