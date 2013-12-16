@@ -36,6 +36,7 @@ public class UnitQueuUI : MonoBehaviour {
         unit.transform.parent = transform;
         unit.transform.localPosition = m_offset;
 
+
         switch (type)
         {
             case Entity.Type.bomber:
