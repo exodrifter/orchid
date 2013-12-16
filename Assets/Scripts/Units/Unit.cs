@@ -21,10 +21,6 @@ public class Unit : Entity {
 
     private Timer m_attackTimer;
 
-    public Vector2 position
-    {
-        get { return transform.position; }
-    }
     public Point destination
     {
         get { return m_destination; }
@@ -141,9 +137,14 @@ public class Unit : Entity {
         AudioSource.PlayClipAtPoint(m_shootSound,transform.position, Random.Range(0.01f,0.3f));
 
         float hitChance = Random.Range(0, 1.0f);
-        if (hitChance <= m_munition.accuracy){
+        if (hitChance <= m_munition.accuracy) {
             target.TakeDamage(damage);
         }
+    }
+
+    public new void TakeDamage(int damage){
+        base.TakeDamage(damage);
+        Destroy(gameObject);
     }
 
     public void ReachedDestination(){

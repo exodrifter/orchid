@@ -14,7 +14,8 @@ public class PointCity : Point {
 		get { return m_population; }
 	}
 	
-	void Awake() {
+	new void Awake() {
+        base.Awake();
 		m_timer = new Timer(GROWTH_TIME);
 		gameObject.SetActive(m_startActive);
 		Reset();
@@ -24,7 +25,8 @@ public class PointCity : Point {
 		Reset();
 	}
 	
-	void Update() {
+	new void Update() {
+		base.Update();
 		if(!dead) {
 			m_timer.elapsed += Time.deltaTime;
 			while(m_timer.HasElapsed()) {

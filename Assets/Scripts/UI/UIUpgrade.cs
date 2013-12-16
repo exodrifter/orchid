@@ -18,9 +18,12 @@ public class UIUpgrade : MonoBehaviour {
     public AudioClip m_buySound;
     public AudioClip m_failSound;
     public AudioClip m_hoverSound;
+
+    MoneyEffect m_moneyEffect;
 	
 	void Awake() {
 		SetPosition(m_index);
+
 		m_lvlText = MakeText("text-lvl", "", new Vector3(0, -5, -2), new Color(0.098f, 0.0784f, 0.0667f), 0.7f);
         m_helpText = MakeText("text-help", "$", new Vector3(0, 25, -2), Color.white);
 
@@ -29,7 +32,13 @@ public class UIUpgrade : MonoBehaviour {
         m_unitFactory = GameObject.Find("UnitFactory").GetComponent<UnitFactory>();
         m_lvlTextMesh = m_lvlText.GetComponent<tk2dTextMesh>();
         m_helpTextMesh = m_helpText.GetComponent<tk2dTextMesh>();
+
     }
+
+    void Start(){
+        m_moneyEffect = gameObject.AddComponent<MoneyEffect>();
+    }
+
 	
 	void Update() {
         if(m_showText){
@@ -65,6 +74,8 @@ public class UIUpgrade : MonoBehaviour {
                     m_unitFactory.m_bomberLevel++;
                     State.PlayerMoney -= State.COST_BOMBER_UPGRADE;
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
+
+                    m_moneyEffect.StartEffect(-State.COST_BOMBER_UPGRADE);
                 }
                 else{
                     AudioSource.PlayClipAtPoint(m_failSound,transform.position,0.7f);
@@ -75,6 +86,8 @@ public class UIUpgrade : MonoBehaviour {
                     m_unitFactory.m_fighterLevel++;
                     State.PlayerMoney -= State.COST_FIGHTER_UPGRADE;
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
+
+                    m_moneyEffect.StartEffect(-State.COST_FIGHTER_UPGRADE);
                 }
                 else{
                     AudioSource.PlayClipAtPoint(m_failSound,transform.position,0.7f);

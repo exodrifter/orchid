@@ -61,9 +61,13 @@ public class Entity : MonoBehaviour {
         m_damage += damage;
 
         if(dead){
-            //explode?
-            //TODO how do you want to handle death?
-            //Destroy(gameObject);
+			// Award player
+			if(m_owner == Owner.PLAYER) {
+				State.EnemyMoney += 2;
+			} else {
+				State.PlayerMoney += 2;
+			}
+			// TODO: Explosion gameobject spawning
         }
     }
 }

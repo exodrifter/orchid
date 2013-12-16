@@ -8,12 +8,14 @@ public class State : MonoBehaviour {
 	private const int ENEMY_GPT = 3;
 	
 	private const int COST_FIGHTER = 4;
-	private const int COST_BOMBER = 8;
+	private const int COST_BOMBER = 1;
 	private const int COST_ICBM = 16;
 
-    public const int COST_FIGHTER_UPGRADE = 50;
+    public const int COST_FIGHTER_UPGRADE = 2;
     public const int COST_BOMBER_UPGRADE = 100;
 
+    public tk2dFontData defaultFont;
+    public static State instance;
 	
 	private static Timer m_gptTimer;
 	
@@ -31,6 +33,7 @@ public class State : MonoBehaviour {
 	
 	void Awake() {
 		m_gptTimer = new Timer(GPT_TIME);
+        instance = this;
 	}
 	
 	void Start() {
