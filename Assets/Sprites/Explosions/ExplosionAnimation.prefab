@@ -85,7 +85,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 15
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
   - name: Explosion2
     frames:
     - spriteCollection: {fileID: 11400000, guid: ef520f887fe6fec48a21bfde8490b5d4,
@@ -153,7 +153,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 15
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
