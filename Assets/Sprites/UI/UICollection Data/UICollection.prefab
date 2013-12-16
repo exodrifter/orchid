@@ -73,15 +73,12 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
     attachPoints: []
   - name: upgrade-bomb
     boundsData:
@@ -114,15 +111,12 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
     attachPoints: []
   - name: info-enemy
     boundsData:
@@ -155,15 +149,12 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
     attachPoints: []
   - name: info-fabs
     boundsData:
@@ -196,15 +187,12 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
     attachPoints: []
   - name: info-cities
     boundsData:
@@ -237,15 +225,12 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
     attachPoints: []
   - name: info-attack
     boundsData:
@@ -278,15 +263,50 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    physicsEngine: 0
     colliderType: 0
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
+    attachPoints: []
+  - name: start-button
+    boundsData:
+    - {x: .333332062, y: 1.33333302, z: 0}
+    - {x: 83.3333359, y: 46.6666641, z: 0}
+    untrimmedBoundsData:
+    - {x: .333332062, y: -.333333969, z: 0}
+    - {x: 83.3333359, y: 50, z: 0}
+    texelSize: {x: .666666687, y: .666666687}
+    positions:
+    - {x: -41.3333359, y: -22, z: 0}
+    - {x: 42, y: -22, z: 0}
+    - {x: -41.3333359, y: 24.666666, z: 0}
+    - {x: 42, y: 24.666666, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .585941434, y: .292972654}
+    - {x: .585941434, y: .781246066}
+    - {x: .859371066, y: .292972654}
+    - {x: .859371066, y: .781246066}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b6dee845971ae3948ab6375dd925f25c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 46eaa8c4751ba76408a964ceeebdef6f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
     attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
@@ -294,9 +314,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b6dee845971ae3948ab6375dd925f25c, type: 2}
   textures:
   - {fileID: 2800000, guid: 692051272b3950a41a5b20d690e0fb1d, type: 3}
-  pngTextures: []
-  textureFilterMode: 0
-  textureMipMaps: 0
   allowMultipleAtlases: 0
   spriteCollectionGUID: 21596096d5950484a90359e4c9e73b71
   spriteCollectionName: UICollection
@@ -304,7 +321,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: .75
-  buildKey: 1283190761
+  buildKey: 951479556
   dataGuid: acb375c8957a4484e8b73c87d32eaebf
   managedSpriteCollection: 0
   hasPlatformData: 0

@@ -308,6 +308,7 @@ MonoBehaviour:
     - info-fabs
     - info-cities
     - info-attack
+    - start-button
     spriteTextureGUIDs:
     - 05f17609212672b4b8b415000ce46241
     - 237a40fa11b703b4497084db8ee6aaeb
@@ -315,13 +316,15 @@ MonoBehaviour:
     - 86ec36ca4579a79439bd5fe1529204ba
     - c61d9992d7f5cab44b5c1960f35a925f
     - d831dcafb7cf56a4e81bfd2d8d940005
+    - 46eaa8c4751ba76408a964ceeebdef6f
     spriteTextureTimeStamps:
-    - 1387124777.13903
-    - 1387124777.13802
-    - 1387196532
-    - 1387196564
-    - 1387196549
-    - 1387196741
+    - 1387125854.1497
+    - 1387125854.1027
+    - 1387198299.77519
+    - 1387198299.77619
+    - 1387198299.77319
+    - 1387198299.77219
+    - 1387199018.13928
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
