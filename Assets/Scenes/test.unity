@@ -269,6 +269,45 @@ Prefab:
   m_RootGameObject: {fileID: 813543700}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &23161298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 23161299}
+  - 114: {fileID: 23161300}
+  m_Layer: 0
+  m_Name: counter-money
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23161299
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23161298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 633641885}
+--- !u!114 &23161300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23161298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ed916697ce53045bd109579ec400f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
 --- !u!1 &31519052
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +865,7 @@ Transform:
   - {fileID: 1145967189}
   - {fileID: 1322520308}
   - {fileID: 665483225}
-  m_Father: {fileID: 1291512881}
+  m_Father: {fileID: 563658721}
 --- !u!1 &133733865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,6 +4632,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 131562595}
   - {fileID: 1022747360}
   - {fileID: 1200998201}
   m_Father: {fileID: 1291512881}
@@ -5209,6 +5249,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1625348873}
+  - {fileID: 23161299}
   - {fileID: 910728}
   - {fileID: 428867388}
   m_Father: {fileID: 1037745338}
@@ -9752,7 +9793,6 @@ Transform:
   - {fileID: 36532888}
   - {fileID: 92228181}
   - {fileID: 1620293182}
-  - {fileID: 131562595}
   - {fileID: 563658721}
   - {fileID: 262010521}
   - {fileID: 1455875181}
@@ -14056,7 +14096,7 @@ GameObject:
   - 4: {fileID: 1625348873}
   - 114: {fileID: 1625348874}
   m_Layer: 0
-  m_Name: counter-money
+  m_Name: unit-queue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14069,7 +14109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625348872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -76.282135, y: -29.1730423, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633641885}
@@ -14081,10 +14121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1625348872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed916697ce53045bd109579ec400f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 912db8287111dba40b047b6cdb37b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_font: {fileID: 11400000, guid: 2a0d61a04e92f6948ba962934cc9b131, type: 2}
+  m_collection: {fileID: 0}
 --- !u!1 &1627794694
 GameObject:
   m_ObjectHideFlags: 0
