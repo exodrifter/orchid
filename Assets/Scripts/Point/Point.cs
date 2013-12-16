@@ -7,14 +7,20 @@ using System.Collections;
 /// </summary>
 public abstract class Point : Entity {
 	
-	
-	public bool m_canRespawn = false;
-	
 	private bool m_rewardGiven;
 	
-	protected void Update() {
+	protected new void Awake() {
+		base.Awake();
+	}
+	
+	protected void Start() {
+		State.instance.RegisterPointForAI(this);
 	}
 
+	protected void Update() {
+		
+	}
+	
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(gameObject.name + " triggered by " + other.GetType());
