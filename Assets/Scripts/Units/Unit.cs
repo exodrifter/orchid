@@ -101,6 +101,9 @@ public class Unit : Entity {
 
         Vector2 direction = m_destination.position - m_source.position;
         gameObject.GetComponent<Rigidbody2D>().velocity = direction.normalized * velocity;
+        transform.LookAt(destination.gameObject.transform, transform.up);
+        transform.Rotate(0 , -90, 0);
+        transform.position = transform.position + new Vector3(0 , 0, -2);
     }
 
     bool CanAttack(Entity target){
@@ -146,6 +149,9 @@ public class Unit : Entity {
 
     public void ReachedDestination(){
         gameObject.GetComponent<Rigidbody2D>().velocity *= -1;
+        transform.LookAt(source.gameObject.transform, transform.up);
+        transform.Rotate(0 , -90, 0);
+        transform.position = transform.position + new Vector3(0 , 0, -2);
         m_reachedDestination = true;
     }
 
