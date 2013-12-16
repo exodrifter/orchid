@@ -39,7 +39,8 @@ public class UIFab : PointUI {
 
     void Start(){
         m_moneyEffect = gameObject.AddComponent<MoneyEffect>();        
-        m_moneyEffect.SetPosition(GameObject.Find("counter-money").transform.position - new Vector3(7, 20, 0));
+        m_moneyEffect.SetParent(GameObject.Find("counter-money").transform);
+        m_moneyEffect.SetOffset(new Vector2(-7, -20));
     }
 	
 	void Update() {

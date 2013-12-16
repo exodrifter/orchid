@@ -32,7 +32,13 @@ public class PointCity : Point {
 			m_timer.elapsed += Time.deltaTime;
 			while(m_timer.HasElapsed()) {
 				m_population++;
-				m_hp = m_population * 50;
+                if(m_owner == Owner.PLAYER){
+				    State.PLAYER_GPT++;
+                }
+                else if(m_owner == Owner.ENEMY){
+                     State.PLAYER_GPT++;
+                }
+                m_hp = m_population * 50;
 				m_money = m_population * 15;
 				m_timer.SetBack();
 				

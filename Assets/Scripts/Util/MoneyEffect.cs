@@ -7,7 +7,8 @@ public class MoneyEffect : MonoBehaviour {
     public Color getColour = Color.green;
     public Color giveColour = Color.red;
 
-    private Vector3 m_moneyPosition;
+    private Transform m_parent;
+    private Vector2 m_offset;
     
     public IEnumerator Effect(GameObject effect)
     {
@@ -26,19 +27,23 @@ public class MoneyEffect : MonoBehaviour {
     }
 
     void Awake(){
-        m_moneyPosition = transform.position;
+        m_parent = transform;
     }
 
-    public void SetPosition(Vector2 position){
-        m_moneyPosition = new Vector3(position.x, position.y, -2);
+    public void SetParent(Transform parent){
+        m_parent = parent;
+    }
+
+     public void SetOffset(Vector2 offset){
+        m_offset = offset;
     }
 
     GameObject MakeText(int amount) {
 		string amountString = (amount > 0 ? "+ " : "") + amount;
         
         GameObject ret = new GameObject();		
-		ret.transform.parent = this.transform;
-		ret.transform.position = m_moneyPosition;
+		ret.transform.parent = m_parent;
+		ret.transform.localPosition = m_offset;
         ret.name = amountString;
 		ret.SetActive(false);
 		
