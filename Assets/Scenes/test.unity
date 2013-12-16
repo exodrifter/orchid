@@ -537,7 +537,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 450434177}
   m_IsPrefabParent: 0
@@ -622,7 +623,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 407392127}
   m_IsPrefabParent: 0
@@ -1352,7 +1354,6 @@ GameObject:
   - 114: {fileID: 211303832}
   - 61: {fileID: 211303831}
   - 114: {fileID: 211303830}
-  - 114: {fileID: 211303829}
   m_Layer: 0
   m_Name: PointFab-Enemy9
   m_TagString: Untagged
@@ -1371,24 +1372,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &211303829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1264652195}
-  m_GameObject: {fileID: 211303827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &211303830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,7 +1626,6 @@ GameObject:
   - 114: {fileID: 228853430}
   - 61: {fileID: 228853429}
   - 114: {fileID: 228853428}
-  - 114: {fileID: 228853427}
   m_Layer: 0
   m_Name: PointFab-Enemy1
   m_TagString: Untagged
@@ -1662,24 +1644,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &228853427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1438312773}
-  m_GameObject: {fileID: 228853425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &228853428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,7 +2205,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 937762114}
   m_IsPrefabParent: 0
@@ -2614,7 +2579,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 448429484}
   m_IsPrefabParent: 0
@@ -2666,7 +2632,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 1499819316}
   m_IsPrefabParent: 0
@@ -3583,7 +3550,6 @@ GameObject:
   - 114: {fileID: 407392132}
   - 61: {fileID: 407392131}
   - 114: {fileID: 407392130}
-  - 114: {fileID: 407392129}
   m_Layer: 0
   m_Name: PointFab-Enemy0
   m_TagString: Untagged
@@ -3602,24 +3568,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &407392129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 53181762}
-  m_GameObject: {fileID: 407392127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &407392130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,7 +4077,6 @@ GameObject:
   - 114: {fileID: 448429489}
   - 61: {fileID: 448429488}
   - 114: {fileID: 448429487}
-  - 114: {fileID: 448429486}
   m_Layer: 0
   m_Name: PointFab-Enemy2
   m_TagString: Untagged
@@ -4148,24 +4095,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &448429486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 320424510}
-  m_GameObject: {fileID: 448429484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &448429487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4260,7 +4189,6 @@ GameObject:
   - 114: {fileID: 450434182}
   - 61: {fileID: 450434181}
   - 114: {fileID: 450434180}
-  - 114: {fileID: 450434179}
   m_Layer: 0
   m_Name: PointFab-Enemy8
   m_TagString: Untagged
@@ -4279,24 +4207,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &450434179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 33345828}
-  m_GameObject: {fileID: 450434177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &450434180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4425,7 +4335,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 2136656035}
   m_IsPrefabParent: 0
@@ -4999,7 +4910,6 @@ GameObject:
   - 114: {fileID: 508809728}
   - 61: {fileID: 508809727}
   - 114: {fileID: 508809726}
-  - 114: {fileID: 508809725}
   m_Layer: 0
   m_Name: PointFab-Enemy6
   m_TagString: Untagged
@@ -5018,24 +4928,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &508809725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1107382388}
-  m_GameObject: {fileID: 508809723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &508809726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8401,7 +8293,6 @@ GameObject:
   - 114: {fileID: 937762119}
   - 61: {fileID: 937762118}
   - 114: {fileID: 937762117}
-  - 114: {fileID: 937762116}
   m_Layer: 0
   m_Name: PointFab-Enemy3
   m_TagString: Untagged
@@ -8420,24 +8311,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &937762116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 251474943}
-  m_GameObject: {fileID: 937762114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &937762117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10079,7 +9952,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 508809723}
   m_IsPrefabParent: 0
@@ -10483,7 +10357,6 @@ GameObject:
   - 114: {fileID: 1144675769}
   - 61: {fileID: 1144675768}
   - 114: {fileID: 1144675767}
-  - 114: {fileID: 1144675766}
   m_Layer: 0
   m_Name: PointFab-Enemy7
   m_TagString: Untagged
@@ -10502,24 +10375,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &1144675766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 2081751270}
-  m_GameObject: {fileID: 1144675764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &1144675767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11261,7 +11116,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 211303827}
   m_IsPrefabParent: 0
@@ -13101,7 +12957,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 228853425}
   m_IsPrefabParent: 0
@@ -13797,7 +13654,6 @@ GameObject:
   - 114: {fileID: 1499819321}
   - 61: {fileID: 1499819320}
   - 114: {fileID: 1499819319}
-  - 114: {fileID: 1499819318}
   m_Layer: 0
   m_Name: PointFab-Enemy4
   m_TagString: Untagged
@@ -13816,24 +13672,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &1499819318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 329091973}
-  m_GameObject: {fileID: 1499819316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &1499819319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20321,7 +20159,8 @@ Prefab:
       propertyPath: m_owner
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
   m_RootGameObject: {fileID: 1144675764}
   m_IsPrefabParent: 0
@@ -20686,7 +20525,6 @@ GameObject:
   - 114: {fileID: 2136656040}
   - 61: {fileID: 2136656039}
   - 114: {fileID: 2136656038}
-  - 114: {fileID: 2136656037}
   m_Layer: 0
   m_Name: PointFab-Enemy5
   m_TagString: Untagged
@@ -20705,24 +20543,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 211327571}
---- !u!114 &2136656037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 0be961d9146fbd641997aa1ee8914cb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 454081200}
-  m_GameObject: {fileID: 2136656035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18548b671418eed42b7f7b7d789f110e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_unitFactory: {fileID: 11400000, guid: 15d11757643afa24fb1760aa981d5b2a, type: 2}
-  m_hoverSound: {fileID: 8300000, guid: 19386551ba7de4d4bbb09d3bdd74d11b, type: 3}
-  m_clickSound: {fileID: 8300000, guid: 060b69e5cb16dc448bd6a37994365927, type: 3}
-  m_cancelSound: {fileID: 8300000, guid: a1e5f8f6c5a4f67479475159d375e6ef, type: 3}
-  m_buySound: {fileID: 8300000, guid: 558bdd630c7fd654ba5941ccdd76086f, type: 3}
-  m_launchSound: {fileID: 8300000, guid: 8216d103d1501e4479055d3824b19eea, type: 3}
 --- !u!114 &2136656038
 MonoBehaviour:
   m_ObjectHideFlags: 0
