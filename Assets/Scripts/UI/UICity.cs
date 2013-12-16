@@ -15,22 +15,27 @@ public class UICity : PointUI {
 	}
 	
 	void Update () {
-		// Check if the mouse is hovering
-		Vector3 hoverPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		if(collider2D.OverlapPoint(hoverPos)) {
-			SetOpen(true);
-		} else {
-			SetOpen(false);
-		}
+        if(m_point.dead){
+           m_popText.SetActive(false);
+        }
+        else{
+		    // Check if the mouse is hovering
+		    Vector3 hoverPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		    if(collider2D.OverlapPoint(hoverPos)) {
+			    SetOpen(true);
+		    } else {
+			    SetOpen(false);
+		    }
 		
-		tk2dTextMesh mesh = m_popText.GetComponent<tk2dTextMesh>();
-		mesh.renderer.enabled = true;
-		if(IsOpen()) {
-			mesh.text = "Population: " + m_point.population;
-		} else {
-			mesh.text = ""+m_point.population;
-		}
-		mesh.Commit();
+		    tk2dTextMesh mesh = m_popText.GetComponent<tk2dTextMesh>();
+		    mesh.renderer.enabled = true;
+		    if(IsOpen()) {
+			    mesh.text = "Population: " + m_point.population;
+		    } else {
+			    mesh.text = ""+m_point.population;
+		    }
+		    mesh.Commit();
+        }
 	}
 	
 	private GameObject MakeText(string name, string text, Vector3 offset) {
