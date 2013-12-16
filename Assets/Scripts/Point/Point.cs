@@ -10,7 +10,7 @@ public abstract class Point : Entity {
 	public AudioClip m_destructionSound;
 	public bool m_canRespawn = false;
 	
-	private bool m_playedDestructionSound;
+	private bool m_rewardGiven;
 	
 	/// <summary>
 	/// The amount of money that this point should reward the attacker when destroyed
@@ -23,9 +23,14 @@ public abstract class Point : Entity {
 	
 	protected void Update() {
 		if(dead) {
-			if(!m_playedDestructionSound) {
+			if(!m_rewardGiven) {
 				AudioSource.PlayClipAtPoint(m_destructionSound,this.transform.position,0.6f);
-				m_playedDestructionSound = true;
+				if(m_owner == Owner.PLAYER) {
+					State.EnemyMoney += m_money;
+				} else {
+					State.PlayerMoney += m_money;
+				}
+				m_rewardGiven = true;
 			}
 			gameObject.SetActive(false);
 		}
