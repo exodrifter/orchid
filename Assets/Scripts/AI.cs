@@ -28,6 +28,12 @@ public class AI : MonoBehaviour {
 	}
 	
 	void SpawnUnits() {
+		// Check if there are any available fabs
+		if(State.instance.EnemyFabs.Count <= 0) {
+			return;
+		}
+		
+		// Spawn a unit if we have enough money
 		if(State.EnemyMoney > 0) {
 			State.EnemyMoney -= State.GetCostOf(Entity.Type.fighter);
 			

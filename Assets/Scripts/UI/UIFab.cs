@@ -154,7 +154,8 @@ public class UIFab : PointUI {
 			return null;
 		}
 		if(point.m_owner != m_point.m_owner) {
-			return point;
+			if(!point.dead)
+				return point;
 		}
 		return null;
 	}

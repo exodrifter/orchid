@@ -41,7 +41,6 @@ public class ExplosionGroup : MonoBehaviour {
 			Vector3 pos = this.transform.position;
 			pos.x = pos.x + Random.Range(-m_range.x, m_range.x);
 			pos.y = pos.y + Random.Range(-m_range.y, m_range.y);
-			pos.z = pos.z;
 			go.transform.position = pos;
 		}
 	}

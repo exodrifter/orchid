@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
   - enabled: 1
     path: Assets/Scenes/test.unity
+  - enabled: 1
+    path: Assets/Scenes/endgame-lose.unity
+  - enabled: 1
+    path: Assets/Scenes/endgame-win.unity

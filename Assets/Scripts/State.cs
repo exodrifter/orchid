@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class State : MonoBehaviour {
@@ -56,15 +57,20 @@ public class State : MonoBehaviour {
 	}
 	
 	void Update() {
+		// Gold update
 		m_gptTimer.elapsed += Time.deltaTime;
 		while(m_gptTimer.HasElapsed()) {
 			State.m_playerMoney += PLAYER_GPT;
-            Debug.LogWarning("Adding to player money with GPT of " + PLAYER_GPT + " = " + m_playerMoney);
-            m_moneyEffect.StartEffect(PLAYER_GPT);
-            Debug.LogWarning("DOUBLE CHECK " + PLAYER_GPT + " = " + m_playerMoney);
-
+			m_moneyEffect.StartEffect(PLAYER_GPT);
 			State.m_enemyMoney += ENEMY_GPT;
 			m_gptTimer.SetBack();
+		}
+		
+		// Check for win condition
+		if(m_enemyFabs.Count == 0) {
+			StartCoroutine(EndGame(true));
+		} else if(m_playerFabs.Count == 0) {
+			StartCoroutine(EndGame(false));
 		}
 	}
 
@@ -79,6 +85,18 @@ public class State : MonoBehaviour {
 		default:
             Debug.LogError("Entity type " + type + " does not have a cost.");
 			return 0;
+		}
+	}
+	
+	private IEnumerator EndGame(bool win) {
+		// TODO: Do something maybe
+		
+		yield return new WaitForSeconds(2.0f);
+		
+		if(win) {
+			Application.LoadLevelAdditive("endgame-win");
+		} else {
+			Application.LoadLevelAdditive("endgame-lose");
 		}
 	}
 	
@@ -116,7 +134,7 @@ public class State : MonoBehaviour {
 		get { return m_enemyWonders; }
 	}
 	
-	public void RegisterPointForAI(Point p) {
+	public void RegisterPoint(Point p) {
 		if(p is PointCity) {
 			if(p.m_owner == Owner.PLAYER) {
 				m_playerCities.Add(p as PointCity);
@@ -135,6 +153,19 @@ public class State : MonoBehaviour {
 			} else {
 				m_enemyWonders.Add(p as PointWonder);
 			}
+		}
+	}
+	
+	public void UnregisterPoint(Point p) {
+		if(p is PointCity) {
+			m_playerCities.Remove(p as PointCity);
+			m_enemyCities.Remove(p as PointCity);
+		} else if(p is PointFab) {
+			m_playerFabs.Remove(p as PointFab);
+			m_enemyFabs.Remove(p as PointFab);
+		} else if(p is PointWonder) {
+			m_playerWonders.Remove(p as PointWonder);
+			m_enemyWonders.Remove(p as PointWonder);
 		}
 	}
 	

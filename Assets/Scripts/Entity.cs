@@ -100,6 +100,8 @@ public class Entity : MonoBehaviour {
 			go.transform.position = this.transform.position + new Vector3(0,0,-1);
 			if(Type.point != m_type) {
 				go.GetComponent<ExplosionGroup>().m_range*=.3f;
+			} else {
+				State.instance.UnregisterPoint(this as Point);
 			}
 		}
 	}
