@@ -6,7 +6,12 @@ using System.Collections;
 /// interact with.
 /// </summary>
 public abstract class Point : Entity {
-		
+	
+	public AudioClip m_destructionSound;
+	public bool m_canRespawn = false;
+	
+	private bool m_playedDestructionSound;
+	
 	/// <summary>
 	/// The amount of money that this point should reward the attacker when destroyed
 	/// </summary>
@@ -14,6 +19,16 @@ public abstract class Point : Entity {
 	
 	public int money {
 		get { return m_money; }
+	}
+	
+	protected void Update() {
+		if(dead) {
+			if(!m_playedDestructionSound) {
+				AudioSource.PlayClipAtPoint(m_destructionSound,this.transform.position,0.6f);
+				m_playedDestructionSound = true;
+			}
+			gameObject.SetActive(false);
+		}
 	}
 
     void OnTriggerEnter2D(Collider2D other)

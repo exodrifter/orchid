@@ -84,6 +84,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

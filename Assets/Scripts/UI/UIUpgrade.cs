@@ -14,6 +14,7 @@ public class UIUpgrade : MonoBehaviour {
 	void Awake() {
 		SetPosition(m_index);
 		m_text = new GameObject();
+		m_text.transform.parent = this.transform;
 		m_mesh = m_text.AddComponent<tk2dTextMesh>();
 		m_mesh.font = m_font;
 		m_mesh.maxChars = 20;

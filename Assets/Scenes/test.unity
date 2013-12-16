@@ -328,6 +328,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &31519056
 BoxCollider2D:
@@ -630,6 +632,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 1
 --- !u!114 &91434532
 MonoBehaviour:
@@ -888,6 +892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &133733869
 BoxCollider2D:
@@ -1014,6 +1020,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &144674805
 BoxCollider2D:
@@ -1398,6 +1406,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &237049098
 BoxCollider2D:
@@ -1524,6 +1534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &239869731
 BoxCollider2D:
@@ -1721,6 +1733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!1001 &251568065
 Prefab:
   m_ObjectHideFlags: 0
@@ -1961,6 +1975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &314978355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2152,6 +2168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &358873770
 BoxCollider2D:
@@ -2278,6 +2296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &359046345
 BoxCollider2D:
@@ -2404,6 +2424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &369368791
 BoxCollider2D:
@@ -2638,6 +2660,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &394165530
 BoxCollider2D:
@@ -2816,6 +2840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &401750765
 BoxCollider2D:
@@ -2981,6 +3007,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &422284093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3226,6 +3254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &431007349
 BoxCollider2D:
@@ -3452,6 +3482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &488131419
 BoxCollider2D:
@@ -3578,6 +3610,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &490427603
 BoxCollider2D:
@@ -3704,6 +3738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &504626903
 BoxCollider2D:
@@ -3830,6 +3866,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &505975764
 BoxCollider2D:
@@ -4146,6 +4184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &549573893
 BoxCollider2D:
@@ -4272,6 +4312,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &551074960
 BoxCollider2D:
@@ -4398,6 +4440,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &556996843
 BoxCollider2D:
@@ -4524,6 +4568,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &563013142
 BoxCollider2D:
@@ -4683,6 +4729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &563831359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4912,6 +4960,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &607630969
 BoxCollider2D:
@@ -5025,6 +5075,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &609772682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5297,6 +5349,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &653236879
 BoxCollider2D:
@@ -5527,6 +5581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &665483228
 BoxCollider2D:
@@ -5653,6 +5709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &683219217
 BoxCollider2D:
@@ -5779,6 +5837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &689126150
 BoxCollider2D:
@@ -5957,6 +6017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &707443844
 BoxCollider2D:
@@ -6243,6 +6305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &786783892
 BoxCollider2D:
@@ -6369,6 +6433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &811262893
 BoxCollider2D:
@@ -6495,6 +6561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &813543704
 BoxCollider2D:
@@ -6673,6 +6741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &833897192
 BoxCollider2D:
@@ -6799,6 +6869,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 1
 --- !u!61 &836014170
 BoxCollider2D:
@@ -6925,6 +6997,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &846557809
 BoxCollider2D:
@@ -7311,6 +7385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &950541379
 BoxCollider2D:
@@ -7633,6 +7709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1005124100
 BoxCollider2D:
@@ -7843,6 +7921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1022747363
 BoxCollider2D:
@@ -7956,6 +8036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &1025051030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8290,6 +8372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 1
 --- !u!61 &1038347201
 BoxCollider2D:
@@ -8588,6 +8672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1089885858
 BoxCollider2D:
@@ -8701,6 +8787,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &1108578948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8892,6 +8980,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1136056989
 BoxCollider2D:
@@ -9098,6 +9188,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1145967192
 BoxCollider2D:
@@ -9262,6 +9354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1200998204
 BoxCollider2D:
@@ -9465,6 +9559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &1240853274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9708,6 +9804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1264901699
 BoxCollider2D:
@@ -9883,6 +9981,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1292958467
 BoxCollider2D:
@@ -10009,6 +10109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1296426213
 BoxCollider2D:
@@ -10295,6 +10397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1322520311
 BoxCollider2D:
@@ -10421,6 +10525,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1329936382
 BoxCollider2D:
@@ -10651,6 +10757,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1364198874
 BoxCollider2D:
@@ -10764,6 +10872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &1366864913
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11050,6 +11160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1375527641
 BoxCollider2D:
@@ -11232,6 +11344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1394124036
 BoxCollider2D:
@@ -11358,6 +11472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1408953051
 BoxCollider2D:
@@ -11625,6 +11741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1465892777
 BoxCollider2D:
@@ -11751,6 +11869,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1468543965
 BoxCollider2D:
@@ -11916,6 +12036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &1483048402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12230,6 +12352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!1 &1517669898
 GameObject:
   m_ObjectHideFlags: 0
@@ -12289,6 +12413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1517669902
 BoxCollider2D:
@@ -12415,6 +12541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1523598860
 BoxCollider2D:
@@ -12541,6 +12669,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1525348202
 BoxCollider2D:
@@ -12715,6 +12845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1536944905
 BoxCollider2D:
@@ -12898,6 +13030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &1549966698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13199,6 +13333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1575138744
 BoxCollider2D:
@@ -13429,6 +13565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 1
 --- !u!61 &1590013431
 BoxCollider2D:
@@ -13667,6 +13805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1599868397
 BoxCollider2D:
@@ -13897,6 +14037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1618695998
 BoxCollider2D:
@@ -14023,6 +14165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1619048787
 BoxCollider2D:
@@ -14219,6 +14363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1627794698
 BoxCollider2D:
@@ -14401,6 +14547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1635310791
 BoxCollider2D:
@@ -14635,6 +14783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1651134555
 BoxCollider2D:
@@ -14813,6 +14963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 1
 --- !u!61 &1696134907
 BoxCollider2D:
@@ -14939,6 +15091,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1719619891
 BoxCollider2D:
@@ -15065,6 +15219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1725900187
 BoxCollider2D:
@@ -15243,6 +15399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1729139443
 BoxCollider2D:
@@ -15369,6 +15527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1739956593
 BoxCollider2D:
@@ -15495,6 +15655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1754570094
 BoxCollider2D:
@@ -15649,6 +15811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1793442396
 BoxCollider2D:
@@ -15775,6 +15939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1812413497
 BoxCollider2D:
@@ -15890,6 +16056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1831826459
 BoxCollider2D:
@@ -16027,6 +16195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 1
 --- !u!61 &1880151719
 BoxCollider2D:
@@ -16153,6 +16323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1887412742
 BoxCollider2D:
@@ -16339,6 +16511,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1891890293
 BoxCollider2D:
@@ -16633,6 +16807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1938131148
 BoxCollider2D:
@@ -16795,6 +16971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1948381575
 BoxCollider2D:
@@ -16973,6 +17151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &1988685296
 BoxCollider2D:
@@ -17263,6 +17443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &2003708416
 BoxCollider2D:
@@ -17449,6 +17631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &2012806774
 BoxCollider2D:
@@ -17562,6 +17746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &2016294740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17908,6 +18094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
 --- !u!61 &2036891115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18151,6 +18339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 0
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &2069374333
 BoxCollider2D:
@@ -18277,6 +18467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &2069869139
 BoxCollider2D:
@@ -18459,6 +18651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owner: 1
   m_type: 3
+  m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
+  m_canRespawn: 0
   m_startActive: 0
 --- !u!61 &2088559788
 BoxCollider2D:
