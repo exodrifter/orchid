@@ -20,6 +20,8 @@ public class UIUpgrade : MonoBehaviour {
     public AudioClip m_hoverSound;
 
     MoneyEffect m_moneyEffect;
+
+    private int count = 0;
 	
 	void Awake() {
 		SetPosition(m_index);
@@ -40,6 +42,9 @@ public class UIUpgrade : MonoBehaviour {
 
 	
 	void Update() {
+        if(count >= 3){
+            m_helpText.SetActive(false);
+        }
         if(m_showText){
             switch (m_index){
                 case 0:
@@ -73,11 +78,12 @@ public class UIUpgrade : MonoBehaviour {
     void OnMouseDown(){
         switch (m_index){
             case 0:
-                if(State.PlayerMoney > State.COST_ICBM_UPGRADE){
+                if(State.PlayerMoney > State.COST_ICBM_UPGRADE && count < 3){
                     m_unitFactory.m_icbmLevel++;
                     State.PlayerMoney -= State.COST_ICBM_UPGRADE;
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
 
+                    count++;
                     m_moneyEffect.StartEffect(-State.COST_ICBM_UPGRADE);
                 }
                 else{
@@ -85,12 +91,13 @@ public class UIUpgrade : MonoBehaviour {
                 }
                 break;
             case 1:
-                if(State.PlayerMoney > State.COST_BOMBER_UPGRADE){
+                if(State.PlayerMoney > State.COST_BOMBER_UPGRADE  && count < 3){
                     m_unitFactory.m_bomberLevel++;
                     
                     State.PlayerMoney -= State.COST_BOMBER_UPGRADE;
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
 
+                    count++;
                     m_moneyEffect.StartEffect(-State.COST_BOMBER_UPGRADE);
                 }
                 else{
@@ -98,11 +105,12 @@ public class UIUpgrade : MonoBehaviour {
                 }
                 break;
             case 2:
-                if(State.PlayerMoney > State.COST_FIGHTER_UPGRADE){
+                if(State.PlayerMoney > State.COST_FIGHTER_UPGRADE  && count < 3){
                     m_unitFactory.m_fighterLevel++;
                     State.PlayerMoney -= State.COST_FIGHTER_UPGRADE;
                     AudioSource.PlayClipAtPoint(m_buySound,transform.position,0.7f);
 
+                    count++;
                     m_moneyEffect.StartEffect(-State.COST_FIGHTER_UPGRADE);
                 }
                 else{

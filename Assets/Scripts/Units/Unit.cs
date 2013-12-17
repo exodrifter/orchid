@@ -83,7 +83,7 @@ public class Unit : Entity {
             {
                 Attack(m_attackTarget);
                 m_attackTimer.SetBack();
-                m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
+                //m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
             }
         }
     }
