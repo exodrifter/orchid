@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class State : MonoBehaviour {
 	
 	public const float GPT_TIME = 5.0f;
-	public static int PLAYER_GPT = 5000;
+	public static int PLAYER_GPT = 5;
 	public static int ENEMY_GPT = 5;
 	public static int PLAYER_START_GOLD = 20;
 	public static int ENEMY_START_GOLD = 20;
