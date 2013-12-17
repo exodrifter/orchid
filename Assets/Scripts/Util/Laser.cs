@@ -23,7 +23,7 @@ public class Laser{
     {
         m_gameObject = new GameObject();
         m_renderer = m_gameObject.AddComponent<LineRenderer>();
-        m_renderer.material = new Material(Shader.Find("Particles/Additive (Soft)"));
+        m_renderer.material = Resources.Load("Line") as Material;   
 
         m_renderer.SetPosition(0, start);
         m_renderer.SetPosition(1, end);

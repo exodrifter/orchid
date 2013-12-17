@@ -12,7 +12,7 @@ public class State : MonoBehaviour {
 	
 	public const int COST_FIGHTER = 4;
 	public const int COST_BOMBER = 8;
-	public const int COST_ICBM = 40;
+	public const int COST_ICBM = 16;
 
     public const int COST_FIGHTER_UPGRADE = 50;
     public const int COST_BOMBER_UPGRADE = 100;

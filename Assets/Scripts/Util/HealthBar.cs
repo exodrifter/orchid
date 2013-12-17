@@ -21,7 +21,7 @@ public class HealthBar : MonoBehaviour {
     private float m_maxLength;
 	void Start () {
         m_renderer = gameObject.AddComponent<LineRenderer>();
-        m_renderer.material = new Material(Shader.Find("Particles/Additive (Soft)"));   
+        m_renderer.material = Resources.Load("Line") as Material;   
 
         tk2dSprite sprite = gameObject.GetComponent<tk2dSprite>();
         
