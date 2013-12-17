@@ -42,19 +42,10 @@ public class AI : MonoBehaviour {
 		}
 		
 		// Spawn a unit if we have enough money
-		if(State.EnemyMoney > 0) {
-			Spawn(Entity.Type.fighter);
-		}
 		if(State.EnemyMoney > 10) {
 			Spawn(Entity.Type.fighter);
 		}
 		if(State.EnemyMoney > 20) {
-			Spawn(Entity.Type.bomber);
-		}
-		if(State.EnemyMoney > 30) {
-			Spawn(Entity.Type.bomber);
-		}
-		if(State.EnemyMoney > 30) {
 			Spawn(Entity.Type.bomber);
 		}
 	}
@@ -69,7 +60,13 @@ public class AI : MonoBehaviour {
     }
 
     private void SendUnit(GameObject go) {
+        if(Random.Range(0, 1) == 1){
 		go.GetComponent<Unit>().SetSourceAndTarget(State.instance.EnemyFabs[Random.Range(0,State.instance.EnemyFabs.Count-1)],
 			                                       State.instance.PlayerCities[Random.Range(0,State.instance.PlayerCities.Count-1)]);
+        }
+        else{
+            go.GetComponent<Unit>().SetSourceAndTarget(State.instance.EnemyFabs[Random.Range(0,State.instance.EnemyFabs.Count-1)],
+			                                       State.instance.PlayerFabs[Random.Range(0,State.instance.PlayerFabs.Count-1)]);
+        }
     }
 }
