@@ -120,9 +120,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 1
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -372,6 +369,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &31519056
@@ -402,9 +402,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -782,6 +779,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!114 &91434532
@@ -825,9 +825,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1042,6 +1039,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &133733869
@@ -1072,9 +1072,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1200,6 +1197,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &144674805
@@ -1230,9 +1230,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1331,9 +1328,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 2
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1523,6 +1517,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &211303831
 BoxCollider2D:
@@ -1552,9 +1549,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1796,6 +1790,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &228853429
 BoxCollider2D:
@@ -1825,9 +1822,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -1975,6 +1969,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &237049098
@@ -2005,9 +2002,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2103,6 +2097,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &239869731
@@ -2133,9 +2130,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2249,9 +2243,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2302,6 +2293,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!1001 &251474943
 Prefab:
@@ -2637,6 +2631,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &314978355
 BoxCollider2D:
@@ -2666,9 +2663,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -2936,6 +2930,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &358873770
@@ -2966,9 +2963,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3064,6 +3058,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &359046345
@@ -3094,9 +3091,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3192,6 +3186,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &369368791
@@ -3222,9 +3219,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3428,6 +3422,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &394165530
@@ -3458,9 +3455,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3608,6 +3602,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &401750765
@@ -3638,9 +3635,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3774,6 +3768,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &407392131
 BoxCollider2D:
@@ -3803,9 +3800,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -3956,6 +3950,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &422284093
 BoxCollider2D:
@@ -3985,9 +3982,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4083,9 +4077,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4207,6 +4198,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &431007349
@@ -4237,9 +4231,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4373,6 +4364,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &448429488
 BoxCollider2D:
@@ -4402,9 +4396,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4486,6 +4477,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &450434181
 BoxCollider2D:
@@ -4515,9 +4509,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4714,6 +4705,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &488131419
@@ -4744,9 +4738,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4842,6 +4833,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &490427603
@@ -4872,9 +4866,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -4970,6 +4961,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &504626903
@@ -5000,9 +4994,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5098,6 +5089,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &505975764
@@ -5128,9 +5122,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5212,6 +5203,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &508809727
 BoxCollider2D:
@@ -5241,9 +5235,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5614,6 +5605,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &549573893
@@ -5644,9 +5638,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5742,6 +5733,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &551074960
@@ -5772,9 +5766,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5870,6 +5861,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &556996843
@@ -5900,9 +5894,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -5998,6 +5989,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &563013142
@@ -6028,9 +6022,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6160,6 +6151,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &563831359
 BoxCollider2D:
@@ -6189,9 +6183,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6391,6 +6382,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &607630969
@@ -6421,9 +6415,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6506,6 +6497,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &609772682
 BoxCollider2D:
@@ -6535,9 +6529,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -6854,6 +6845,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &653236879
@@ -6884,9 +6878,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7086,6 +7077,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &665483228
@@ -7116,9 +7110,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7217,9 +7208,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7315,6 +7303,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &683219217
@@ -7345,9 +7336,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7443,6 +7431,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &689126150
@@ -7473,9 +7464,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7623,6 +7611,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &707443844
@@ -7653,9 +7644,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -7911,6 +7899,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &786783892
@@ -7941,9 +7932,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8039,6 +8027,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &811262893
@@ -8069,9 +8060,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8167,6 +8155,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &813543704
@@ -8197,9 +8188,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8347,6 +8335,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &833897192
@@ -8377,9 +8368,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8475,6 +8463,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &836014170
@@ -8505,9 +8496,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8603,6 +8591,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &846557809
@@ -8633,9 +8624,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -8873,6 +8861,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &937762118
 BoxCollider2D:
@@ -8902,9 +8893,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9104,6 +9092,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &950541379
@@ -9134,9 +9125,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9392,6 +9380,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1005124100
@@ -9422,9 +9413,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9604,6 +9592,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1022747363
@@ -9634,9 +9625,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9719,6 +9707,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1025051030
 BoxCollider2D:
@@ -9748,9 +9739,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 18
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -9953,7 +9941,6 @@ MonoBehaviour:
     orthographicPixelsPerMeter: 3
     orthographicOrigin: 1
     orthographicType: 0
-    transparencySortMode: 0
     fieldOfView: 60
     rect:
       serializedVersion: 2
@@ -10055,6 +10042,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1038347201
@@ -10085,9 +10075,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10180,9 +10167,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 9
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10465,6 +10449,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1089885858
@@ -10495,9 +10482,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10701,6 +10685,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1108578948
 BoxCollider2D:
@@ -10730,9 +10717,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 9
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10894,6 +10878,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1136056989
@@ -10924,9 +10911,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -10995,9 +10979,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11088,6 +11069,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1144675768
 BoxCollider2D:
@@ -11117,9 +11101,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11215,6 +11196,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1145967192
@@ -11245,9 +11229,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11381,6 +11362,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1200998204
@@ -11411,9 +11395,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11586,6 +11567,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1240853274
 BoxCollider2D:
@@ -11615,9 +11599,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -11884,6 +11865,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1264901699
@@ -11914,9 +11898,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12060,6 +12041,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1292958467
@@ -12090,9 +12074,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12188,6 +12169,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1296426213
@@ -12218,9 +12202,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12544,6 +12525,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1322520311
@@ -12574,9 +12558,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12672,6 +12653,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1329936382
@@ -12702,9 +12686,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -12855,9 +12836,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13005,6 +12983,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1364198874
@@ -13035,9 +13016,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13120,6 +13098,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1366864913
 BoxCollider2D:
@@ -13149,9 +13130,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 8
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13412,6 +13390,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1375527641
@@ -13442,9 +13423,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13596,6 +13574,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1394124036
@@ -13626,9 +13607,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -13724,6 +13702,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1408953051
@@ -13754,9 +13735,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14046,6 +14024,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1465892777
@@ -14076,9 +14057,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14174,6 +14152,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1468543965
@@ -14204,9 +14185,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14341,6 +14319,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1483048402
 BoxCollider2D:
@@ -14370,9 +14351,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14572,6 +14550,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1499819320
 BoxCollider2D:
@@ -14601,9 +14582,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14717,9 +14695,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14770,6 +14745,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!1 &1517669898
 GameObject:
@@ -14831,6 +14809,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1517669902
@@ -14861,9 +14842,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -14959,6 +14937,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1523598860
@@ -14989,9 +14970,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15087,6 +15065,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1525348202
@@ -15117,9 +15098,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15263,6 +15241,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1536944905
@@ -15293,9 +15274,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15448,6 +15426,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1549966698
 BoxCollider2D:
@@ -15477,9 +15458,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15751,6 +15729,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1575138744
@@ -15781,9 +15762,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -15983,6 +15961,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1590013431
@@ -16013,9 +15994,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16223,6 +16201,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1599868397
@@ -16253,9 +16234,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16455,6 +16433,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1618695998
@@ -16485,9 +16466,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16583,6 +16561,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1619048787
@@ -16613,9 +16594,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16782,6 +16760,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1627794698
@@ -16812,9 +16793,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -16966,6 +16944,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1635310791
@@ -16996,9 +16977,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17202,6 +17180,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1651134555
@@ -17232,9 +17213,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17382,6 +17360,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1696134907
@@ -17412,9 +17393,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17510,6 +17488,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1719619891
@@ -17540,9 +17521,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17638,6 +17616,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1725900187
@@ -17668,9 +17649,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17818,6 +17796,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1729139443
@@ -17848,9 +17829,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -17946,6 +17924,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1739956593
@@ -17976,9 +17957,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18074,6 +18052,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1754570094
@@ -18104,9 +18085,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18230,6 +18208,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1793442396
@@ -18260,9 +18241,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18358,6 +18336,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1812413497
@@ -18388,9 +18369,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18515,6 +18493,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1831826459
@@ -18545,9 +18526,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18654,6 +18632,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1880151719
@@ -18684,9 +18665,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18782,6 +18760,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1887412742
@@ -18812,9 +18793,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -18970,6 +18948,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1891890293
@@ -19000,9 +18981,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19266,6 +19244,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1938131148
@@ -19296,9 +19277,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19430,6 +19408,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1948381575
@@ -19460,9 +19441,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19649,6 +19627,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1988685296
@@ -19679,9 +19660,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -19941,6 +19919,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2003708416
@@ -19971,9 +19952,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20129,6 +20107,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2012806774
@@ -20159,9 +20140,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20244,6 +20222,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &2016294740
 BoxCollider2D:
@@ -20273,9 +20254,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20592,6 +20570,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &2036891115
 BoxCollider2D:
@@ -20621,9 +20602,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 13
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20837,6 +20815,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 0
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2069374333
@@ -20867,9 +20848,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -20965,6 +20943,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2069869139
@@ -20995,9 +20976,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -21202,6 +21180,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2088559788
@@ -21232,9 +21213,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -21322,9 +21300,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -21581,6 +21556,9 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: 79a7a788d50ede34db1c3586d82d96c9, type: 2}
   m_owner: 1
+  m_hp: 0
+  m_damage: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &2136656039
 BoxCollider2D:
@@ -21610,9 +21588,6 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []

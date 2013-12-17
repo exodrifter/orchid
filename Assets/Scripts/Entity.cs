@@ -15,17 +15,17 @@ public class Entity : MonoBehaviour {
 	/// <summary>
 	/// The amount of HP that this point has
 	/// </summary>
-	protected int m_hp;
+	public int m_hp;
 	
 	/// <summary>
 	/// The amount of damage that this point has recieved
 	/// </summary>
-	protected int m_damage;
+	public int m_damage;
 
     /// <summary>
 	/// The amount of money that this point should reward the attacker when destroyed
 	/// </summary>
-	protected int m_money;
+	public int m_money;
 
 	private bool m_rewardGiven = false;
 
