@@ -5,6 +5,8 @@ public class AI : MonoBehaviour {
 	
 	public const float SPAWN_TIME = 5f;
 	public const float SPAWN_TIME_VARIANCE = 5f;
+
+	public static bool m_userStarted = false;
 	
 	Timer m_time;
 	public UnitFactory m_unitFactory;
@@ -15,9 +17,15 @@ public class AI : MonoBehaviour {
 	
 	void Start () {
 		SetRandomTime();
+		m_userStarted = false;
 	}
 	
 	void Update () {
+		// If the user is a pacifist, do nothing
+		if(!m_userStarted) {
+			return;
+		}
+
 		m_time.elapsed += Time.deltaTime;
 		while(m_time.HasElapsed()) {
 			SpawnUnits();
