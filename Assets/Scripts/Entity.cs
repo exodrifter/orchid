@@ -35,6 +35,7 @@ public class Entity : MonoBehaviour {
     public Type m_type;
 
     protected MoneyEffect m_moneyEffect;
+    protected HealthBar m_healthBar;
 	
 	public int hp {
 		get { return m_hp; }
@@ -73,6 +74,14 @@ public class Entity : MonoBehaviour {
 
     protected void Start(){
         m_moneyEffect = gameObject.AddComponent<MoneyEffect>();
+        m_healthBar = gameObject.AddComponent<HealthBar>();
+
+        m_healthBar.maxHealth = m_hp;
+        m_healthBar.currentHealth = m_hp;
+    }
+
+    protected void Update(){
+        m_healthBar.currentHealth = m_hp - damage;
     }
 
     public void TakeDamage(int damage)

@@ -8,8 +8,9 @@ public class PointWonder : Point {
 		m_money = 10;
 	}
 	
-	void Update() {
-		if(dead) {
+	new void Update() {
+		base.Update();
+        if(dead) {
 			GetComponent<tk2dSprite>().SetSprite("BigCrater");
 		}
 	}

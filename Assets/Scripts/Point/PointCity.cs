@@ -25,7 +25,8 @@ public class PointCity : Point {
 		Reset();
 	}
 	
-	void Update() {
+	new void Update() {
+		base.Update();
 		if(!dead) {
 			m_timer.elapsed += Time.deltaTime;
 			while(m_timer.HasElapsed()) {
