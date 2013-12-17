@@ -35,15 +35,33 @@ public class AI : MonoBehaviour {
 		
 		// Spawn a unit if we have enough money
 		if(State.EnemyMoney > 0) {
-			State.EnemyMoney -= State.GetCostOf(Entity.Type.fighter);
-			
-			GameObject go = m_unitFactory.SpawnUnit(Entity.Type.fighter);
-			go.GetComponent<Unit>().SetSourceAndTarget(State.instance.EnemyFabs[Random.Range(0,State.instance.EnemyFabs.Count-1)],
-			                                           State.instance.PlayerCities[Random.Range(0,State.instance.PlayerCities.Count-1)]);
+			Spawn(Entity.Type.fighter);
+		}
+		if(State.EnemyMoney > 10) {
+			Spawn(Entity.Type.fighter);
+		}
+		if(State.EnemyMoney > 20) {
+			Spawn(Entity.Type.bomber);
+		}
+		if(State.EnemyMoney > 30) {
+			Spawn(Entity.Type.bomber);
+		}
+		if(State.EnemyMoney > 30) {
+			Spawn(Entity.Type.bomber);
 		}
 	}
 	
 	void SetRandomTime() {
 		m_time.time = Random.Range(SPAWN_TIME,SPAWN_TIME_VARIANCE);
 	}
+
+    private void Spawn(Entity.Type type) {
+		State.EnemyMoney -= State.GetCostOf(type);
+        SendUnit(m_unitFactory.SpawnUnit(type));
+    }
+
+    private void SendUnit(GameObject go) {
+		go.GetComponent<Unit>().SetSourceAndTarget(State.instance.EnemyFabs[Random.Range(0,State.instance.EnemyFabs.Count-1)],
+			                                       State.instance.PlayerCities[Random.Range(0,State.instance.PlayerCities.Count-1)]);
+    }
 }

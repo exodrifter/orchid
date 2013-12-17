@@ -44,8 +44,6 @@ public class Unit : Entity {
             SetSourceAndTarget(m_source, m_destination);
         }
 
-        m_money = 1;
-
         m_munition = gameObject.GetComponent<Munition>();
         m_lineRenderer = gameObject.AddComponent<LineRenderer>();
         
@@ -152,9 +150,7 @@ public class Unit : Entity {
 
     public void ReachedDestination(){
         if(type == Type.icbm){
-            Explode();
-            gameObject.renderer.enabled = false;
-            Destroy(gameObject, 3);            
+            Explode();      
         }
         else{
             gameObject.GetComponent<Rigidbody2D>().velocity *= -1;

@@ -103,8 +103,12 @@ public class Entity : MonoBehaviour {
     public void Explode(){
     	GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
 		go.transform.position = this.transform.position + new Vector3(0,0,-1);
+        gameObject.renderer.enabled = false;
 		if(Type.point != m_type) {
 			go.GetComponent<ExplosionGroup>().m_range*=.3f;
-		}
+            Destroy(gameObject, 0.2f);
+		} else {
+            State.instance.UnregisterPoint(this as Point);
+        }
     }
 }

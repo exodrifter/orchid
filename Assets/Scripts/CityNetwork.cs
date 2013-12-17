@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class CityNetwork : MonoBehaviour {
-	private const float SPAWN_TIME = 5.0f;
+	private const float SPAWN_TIME = 10.0f;
 	private const float SPAWN_TIME_VARIANCE = 5.0f;
 	
 	private List<PointCity> m_list = new List<PointCity>();

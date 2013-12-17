@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colour: {r: 0, g: .991643429, b: 1, a: 1}
-  damage: 300
+  damage: 50
   attack_time: .300000012
   attack_time_variance: 0
   accuracy: 1
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_destructionSound: {fileID: 8300000, guid: cc3a4d33619b0c945a486835ed5ce189, type: 3}
   m_explosion: {fileID: 11400000, guid: e5961a5c43b5050479335927a6e7a2cf, type: 2}
   m_owner: 0
-  m_hp: 100
+  m_hp: 50
   m_damage: 0
   m_money: 0
   m_type: 2

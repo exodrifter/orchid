@@ -5,8 +5,10 @@ using System.Collections.Generic;
 public class State : MonoBehaviour {
 	
 	public const float GPT_TIME = 5.0f;
-	public static int PLAYER_GPT = 2;
-	public static int ENEMY_GPT = 3;
+	public static int PLAYER_GPT = 5;
+	public static int ENEMY_GPT = 5;
+	public static int PLAYER_START_GOLD = 20;
+	public static int ENEMY_START_GOLD = 20;
 	
 	public const int COST_FIGHTER = 4;
 	public const int COST_BOMBER = 8;
@@ -22,13 +24,13 @@ public class State : MonoBehaviour {
 	private static Timer m_gptTimer;
     private static MoneyEffect m_moneyEffect;
 
-	private static int m_playerMoney = 20;
+	private static int m_playerMoney = PLAYER_START_GOLD;
 	public static int PlayerMoney {
 		get { return m_playerMoney; }
 		set { m_playerMoney = value; }
 	}
 	
-	private static int m_enemyMoney = 20;
+	private static int m_enemyMoney = ENEMY_START_GOLD;
 	public static int EnemyMoney {
 		get { return m_enemyMoney; }
 		set { m_enemyMoney = value; }
@@ -45,6 +47,10 @@ public class State : MonoBehaviour {
         m_moneyEffect = gameObject.AddComponent<MoneyEffect>();        
         m_moneyEffect.SetParent(GameObject.Find("counter-money").transform);
         m_moneyEffect.SetOffset(new Vector2(-7, -20));
+
+        // Reset the money
+        m_playerMoney = PLAYER_START_GOLD;
+        m_enemyMoney = ENEMY_START_GOLD;
 
 		// Reset AI variables
 		m_playerCities = new List<PointCity>();
@@ -69,6 +75,7 @@ public class State : MonoBehaviour {
 		}
 		
 		// Check for win condition
+        Debug.LogWarning(m_enemyFabs.Count +" " + m_playerFabs.Count);
 		if(m_enemyFabs.Count == 0) {
 			StartCoroutine(EndGame(true));
 		} else if(m_playerFabs.Count == 0) {
@@ -96,9 +103,9 @@ public class State : MonoBehaviour {
 		yield return new WaitForSeconds(2.0f);
 		
 		if(win) {
-			Application.LoadLevelAdditive("endgame-win");
+			Application.LoadLevel("endgame-win");
 		} else {
-			Application.LoadLevelAdditive("endgame-lose");
+			Application.LoadLevel("endgame-lose");
 		}
 	}
 	

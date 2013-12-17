@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PointCity : Point {
 	
-	private const float GROWTH_TIME = 30.0f;
+	private const float GROWTH_TIME = 60.0f;
 	
 	private int m_population;
 	private Timer m_timer;
@@ -29,14 +29,14 @@ public class PointCity : Point {
 		if(!dead) {
 			m_timer.elapsed += Time.deltaTime;
 			while(m_timer.HasElapsed()) {
-				m_population++;
+				m_population = m_population > 9 ? m_population : m_population++;
                 if(m_owner == Owner.PLAYER){
 				    State.PLAYER_GPT++;
                 }
                 else if(m_owner == Owner.ENEMY){
                      State.ENEMY_GPT++;
                 }
-                m_hp = m_population * 50;
+                m_hp = m_population * 20;
 				m_money = m_population * 15;
 				m_timer.SetBack();
 				
