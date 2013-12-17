@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4801f8eeb939ec4da0d8a9852facd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colour: {r: 1, g: 0, b: 0, a: 1}
+  colour: {r: 0, g: .991643429, b: 1, a: 1}
   damage: 500
   attack_time: .300000012
   attack_time_variance: 0

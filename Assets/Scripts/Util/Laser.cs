@@ -28,7 +28,7 @@ public class Laser{
         m_renderer.SetPosition(0, start);
         m_renderer.SetPosition(1, end);
 
-        m_renderer.SetWidth(.3f, .1f);
+        m_renderer.SetWidth(1f, 1f);
 
         m_OGColour = colour;
         m_renderer.SetColors(colour, colour);
