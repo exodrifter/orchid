@@ -4,7 +4,7 @@ Orchid
 Orchid is a game that was developed for the Ludum Dare 28 Jam.
 
 * Art by Jim Nguyen
-* Programming by Darwin Pek, and William Vickery. 
+* Programming by Ava Pek, and William Vickery. 
 
 You can view and play the game at the official Ludum Dare website  [here](http://www.ludumdare.com/compo/ludum-dare-28/?action=preview&uid=15471).
 
