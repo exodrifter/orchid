@@ -1,0 +1,3 @@
+[submodule "Assets/Modules/Anchor"]
+	path = Assets/Modules/Anchor
+	url = git@github.com:exodrifter/unity-anchor.git
