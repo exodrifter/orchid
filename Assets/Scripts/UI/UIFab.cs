@@ -51,7 +51,7 @@ public class UIFab : PointUI {
 		Vector3 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		if(Input.GetMouseButtonDown(0)) {
 			// Check if the click was on the point
-			if(collider2D.OverlapPoint(clickPos)) {
+			if(GetComponent<Collider2D>().OverlapPoint(clickPos)) {
 				if(!IsOpen()) {
 					AudioSource.PlayClipAtPoint(m_clickSound,transform.position);
 				} else {
@@ -62,9 +62,9 @@ public class UIFab : PointUI {
 				SetOpen(!IsOpen());
 			}
 			// Check if it collides with any children
-			else if(m_fighterButton.collider2D.OverlapPoint(clickPos)
-					|| m_bomberButton.collider2D.OverlapPoint(clickPos)
-					|| m_icbmButton.collider2D.OverlapPoint(clickPos)) {
+			else if(m_fighterButton.GetComponent<Collider2D>().OverlapPoint(clickPos)
+					|| m_bomberButton.GetComponent<Collider2D>().OverlapPoint(clickPos)
+					|| m_icbmButton.GetComponent<Collider2D>().OverlapPoint(clickPos)) {
 				// Nothing to do, children are doing work
 			}
 			// Check if it collides with any other points

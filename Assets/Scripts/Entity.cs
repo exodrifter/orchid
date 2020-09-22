@@ -64,12 +64,12 @@ public class Entity : MonoBehaviour {
 
     public IEnumerator HitEffect()
     {
-        gameObject.renderer.enabled = false;
+        gameObject.GetComponent<Renderer>().enabled = false;
         for (int i = 0; i < 2; i++)
         {
             yield return 0;
         }
-        gameObject.renderer.enabled = true;
+        gameObject.GetComponent<Renderer>().enabled = true;
     }
 
     protected void Start(){
@@ -112,7 +112,7 @@ public class Entity : MonoBehaviour {
     public void Explode(){
     	GameObject go = Instantiate(m_explosion.gameObject) as GameObject;
 		go.transform.position = this.transform.position + new Vector3(0,0,-1);
-        gameObject.renderer.enabled = false;
+        gameObject.GetComponent<Renderer>().enabled = false;
 		if(Type.point != m_type) {
 			go.GetComponent<ExplosionGroup>().m_range*=.3f;
             Destroy(gameObject, 0.2f);

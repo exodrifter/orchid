@@ -10,7 +10,7 @@ public class UITutorial : MonoBehaviour {
 	public AudioClip m_sound;
 	
 	void Start() {
-		renderer.enabled = false;
+		GetComponent<Renderer>().enabled = false;
 		StartCoroutine(DelayedStart());
 	}
 	
@@ -18,7 +18,7 @@ public class UITutorial : MonoBehaviour {
 		yield return new WaitForSeconds(m_waitTime);
 		
 		transform.position = m_moveTo;
-		renderer.enabled = true;
+		GetComponent<Renderer>().enabled = true;
 		if(m_sound != null) {
 			AudioSource source = gameObject.AddComponent<AudioSource>();
 			source.loop = false;

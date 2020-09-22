@@ -21,14 +21,14 @@ public class UICity : PointUI {
         else{
 		    // Check if the mouse is hovering
 		    Vector3 hoverPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		    if(collider2D.OverlapPoint(hoverPos)) {
+		    if(GetComponent<Collider2D>().OverlapPoint(hoverPos)) {
 			    SetOpen(true);
 		    } else {
 			    SetOpen(false);
 		    }
 		
 		    tk2dTextMesh mesh = m_popText.GetComponent<tk2dTextMesh>();
-		    mesh.renderer.enabled = true;
+		    mesh.GetComponent<Renderer>().enabled = true;
 		    if(IsOpen()) {
 			    mesh.text = "Population: " + m_point.population;
 		    } else {

@@ -23,7 +23,7 @@ public class UIWonder : PointUI {
 	void Update() {
 		// Check if the mouse is hovering
 		Vector3 hoverPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		if(collider2D.OverlapPoint(hoverPos)) {
+		if(GetComponent<Collider2D>().OverlapPoint(hoverPos)) {
 			SetOpen(true);
 		} else {
 			SetOpen(false);

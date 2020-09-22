@@ -12,7 +12,8 @@ public class Laser{
         {
             Color c = m_OGColour;
             c.a = f;
-            m_renderer.SetColors(c, c);
+            m_renderer.startColor = c;
+            m_renderer.endColor = c;
             yield return 0;
         }
         GameObject.Destroy(m_gameObject);
@@ -28,10 +29,12 @@ public class Laser{
         m_renderer.SetPosition(0, start);
         m_renderer.SetPosition(1, end);
 
-        m_renderer.SetWidth(1f, 1f);
+        m_renderer.startWidth = 1;
+        m_renderer.endWidth = 1;
 
         m_OGColour = colour;
-        m_renderer.SetColors(colour, colour);
+        m_renderer.startColor = colour;
+        m_renderer.endColor = colour;
     }
 
 

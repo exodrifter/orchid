@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour {
 
@@ -38,7 +39,7 @@ public class MenuUI : MonoBehaviour {
     public IEnumerator LoadLevel()
     {
 		yield return new WaitForSeconds(0.2f);
-        Application.LoadLevel("test");
+        SceneManager.LoadScene("test");
     }
 
     void OnMouseDown(){

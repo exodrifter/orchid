@@ -30,7 +30,8 @@ public class HealthBar : MonoBehaviour {
         m_renderer.SetPosition(0, gameObject.transform.position + new Vector3(-m_maxLength/2,-10, 0));
         m_renderer.SetPosition(1, gameObject.transform.position + new Vector3(m_maxLength/2,-10, 0));
                 
-        m_renderer.SetWidth(2f, 2f);
+        m_renderer.startWidth = 2;
+        m_renderer.endWidth = 2;
 	}
 	
 	// Update is called once per frame
@@ -39,6 +40,7 @@ public class HealthBar : MonoBehaviour {
         m_renderer.SetPosition(1, gameObject.transform.position + new Vector3((-m_maxLength/2) + m_maxLength * (m_currentHealth/m_maxHealth),-10, 0));
 
         Color colour = new Color(1 - (m_currentHealth/m_maxHealth), (m_currentHealth/m_maxHealth),0 );
-        m_renderer.SetColors(colour, colour);
+        m_renderer.startColor = colour;
+        m_renderer.endColor = colour;
     }
 }

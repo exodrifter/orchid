@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class State : MonoBehaviour {
 	
@@ -103,9 +104,9 @@ public class State : MonoBehaviour {
 		yield return new WaitForSeconds(2.0f);
 		
 		if(win) {
-			Application.LoadLevel("endgame-win");
+			SceneManager.LoadScene("endgame-win");
 		} else {
-			Application.LoadLevel("endgame-lose");
+			SceneManager.LoadScene("endgame-lose");
 		}
 	}
 	

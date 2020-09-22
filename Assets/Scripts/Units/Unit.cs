@@ -54,7 +54,7 @@ public class Unit : Entity {
     void InitBody(){
         Rigidbody2D rigidBody2D = gameObject.AddComponent<Rigidbody2D>();
         rigidBody2D.isKinematic = false;
-        rigidBody2D.fixedAngle = true;
+        rigidBody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         rigidBody2D.gravityScale = 0f;
 
         BoxCollider2D colliderTemp = gameObject.AddComponent<BoxCollider2D>();

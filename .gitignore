@@ -1,5 +1,8 @@
-Library
-Temp
+/.vs/
+/Library/
+/Logs/
+/Temp/
+/UserSettings/
 *.csproj
 *pidb
 *.unityproj

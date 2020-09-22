@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ClickScreen : MonoBehaviour {
 
@@ -15,7 +16,7 @@ public class ClickScreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(m_canAdvance && Input.GetMouseButtonDown(0)) {
-			Application.LoadLevel(m_level);
+			SceneManager.LoadScene(m_level);
 		}
 	}
 
