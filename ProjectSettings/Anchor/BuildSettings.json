@@ -1,0 +1,45 @@
+{
+  "$type": "System.Collections.Generic.List`1[[Exodrifter.Anchor.Editor.BuildConfig, Assembly-CSharp-Editor]], mscorlib",
+  "$values": [
+    {
+      "$type": "Exodrifter.Anchor.Editor.BuildConfig, Assembly-CSharp-Editor",
+      "folder": "Linux 64",
+      "exeName": "orchid",
+      "defaultBuild": true,
+      "target": 24,
+      "options": 0
+    },
+    {
+      "$type": "Exodrifter.Anchor.Editor.BuildConfig, Assembly-CSharp-Editor",
+      "folder": "OSX",
+      "exeName": "Orchid",
+      "defaultBuild": true,
+      "target": 2,
+      "options": 0
+    },
+    {
+      "$type": "Exodrifter.Anchor.Editor.BuildConfig, Assembly-CSharp-Editor",
+      "folder": "Windows 32",
+      "exeName": "Orchid",
+      "defaultBuild": true,
+      "target": 5,
+      "options": 0
+    },
+    {
+      "$type": "Exodrifter.Anchor.Editor.BuildConfig, Assembly-CSharp-Editor",
+      "folder": "Windows 64",
+      "exeName": "Orchid",
+      "defaultBuild": true,
+      "target": 19,
+      "options": 0
+    },
+    {
+      "$type": "Exodrifter.Anchor.Editor.BuildConfig, Assembly-CSharp-Editor",
+      "folder": "Web",
+      "exeName": "orchid",
+      "defaultBuild": true,
+      "target": 20,
+      "options": 0
+    }
+  ]
+}
